@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MuseuID" uuid="a86ff6be-bc35-4976-881c-7e98e087cdff">
+    <database-info product="MySQL" version="5.6.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="museuid"/>
+    <table name="tb_auditoria" schema="" catalog="museuid" type="TABLE">
+      <column name="id_auditoria" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="acao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="descricao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="fk_usuario" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_auditoria"/>
+    </table>
+    <table name="tb_catalogacao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_catalogacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="numero_ordem" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="etiqueta_rfid" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="procedencia" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao_procedencia" sqlType="VARCHAR" precision="450" scale="0" nullable="true" jdbcType="12"/>
+      <column name="dimensoes" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="numero_partes" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="localizacao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data_entrada" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data_cadastro" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="status_emprestimo" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="fk_designacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fk_estratigrafia" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fk_colecao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_catalogacao"/>
+      <foreign-key name="fk_tb_colecao" columns="fk_colecao" ref-table="tb_colecao" ref-schema="" ref-catalog="museuid" ref-columns="id_colecao" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_tb_designacao" columns="fk_designacao" ref-table="tb_designacao" ref-schema="" ref-catalog="museuid" ref-columns="id_designacao" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_tb_estratigrafia" columns="fk_estratigrafia" ref-table="tb_estratigrafia" ref-schema="" ref-catalog="museuid" ref-columns="id_estratigrafia" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_tb_catalogacao" table="tb_emprestimo_item" schema="" catalog="museuid" columns="fk_catalogacao"/>
+      <exported-key name="fk_tb_localizacao_tb_catalogacao1" table="tb_localizacao" schema="" catalog="museuid" columns="fk_catalogacao"/>
+      <exported-key name="tb_validacao_item_ibfk_1" table="tb_validacao_item" schema="" catalog="museuid" columns="fk_catalogacao"/>
+      <index name="idx_fk_colecao" unique="false" columns="fk_colecao"/>
+      <index name="idx_fk_designacao" unique="false" columns="fk_designacao"/>
+      <index name="idx_fk_estratigrafia" unique="false" columns="fk_estratigrafia"/>
+    </table>
+    <table name="tb_colecao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_colecao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_colecao"/>
+      <exported-key name="fk_tb_colecao" table="tb_catalogacao" schema="" catalog="museuid" columns="fk_colecao"/>
+    </table>
+    <table name="tb_designacao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_designacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="genero" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="especie" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="familia" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ordem" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="classe" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_designacao"/>
+      <exported-key name="fk_tb_designacao" table="tb_catalogacao" schema="" catalog="museuid" columns="fk_designacao"/>
+    </table>
+    <table name="tb_emprestimo" schema="" catalog="museuid" type="TABLE">
+      <column name="id_emprestimo" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="numero_emprestimo" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="solicitante" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="cpf" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="rg" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="telefone" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="responsavel" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="status_emprestimo" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data_emprestimo" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="data_devolucao" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="data_entregue" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="descricao" sqlType="VARCHAR" precision="450" scale="0" nullable="true" jdbcType="12"/>
+      <column name="observacoes" sqlType="VARCHAR" precision="600" scale="0" nullable="true" jdbcType="12"/>
+      <column name="fk_instituicao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_emprestimo"/>
+      <foreign-key name="fk_tb_instituicao" columns="fk_instituicao" ref-table="tb_instituicao" ref-schema="" ref-catalog="museuid" ref-columns="id_instituicao" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_tb_emprestimo" table="tb_emprestimo_item" schema="" catalog="museuid" columns="fk_emprestimo"/>
+      <index name="uni_numero_emprestimo" unique="true" columns="numero_emprestimo"/>
+      <index name="idx_fk_instituicao" unique="false" columns="fk_instituicao"/>
+    </table>
+    <table name="tb_emprestimo_item" schema="" catalog="museuid" type="TABLE">
+      <column name="id_emprestimo_item" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="conservacao" sqlType="VARCHAR" precision="1000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="fk_catalogacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fk_emprestimo" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_emprestimo_item"/>
+      <foreign-key name="fk_tb_catalogacao" columns="fk_catalogacao" ref-table="tb_catalogacao" ref-schema="" ref-catalog="museuid" ref-columns="id_catalogacao" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_tb_emprestimo" columns="fk_emprestimo" ref-table="tb_emprestimo" ref-schema="" ref-catalog="museuid" ref-columns="id_emprestimo" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="idx_fk_catalogacao" unique="false" columns="fk_catalogacao"/>
+      <index name="idx_fk_emprestimo" unique="false" columns="fk_emprestimo"/>
+    </table>
+    <table name="tb_estratigrafia" schema="" catalog="museuid" type="TABLE">
+      <column name="id_estratigrafia" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="formacao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="grupo" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_estratigrafia"/>
+      <exported-key name="fk_tb_estratigrafia" table="tb_catalogacao" schema="" catalog="museuid" columns="fk_estratigrafia"/>
+    </table>
+    <table name="tb_excursao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_excursao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="curso" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="participantes" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="responsavel" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="contato" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="guias" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12"/>
+      <column name="horario" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data_visita" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="descricao" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="agendar" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="status_agenda" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="fk_instituticao" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_excursao"/>
+      <index name="idx_tb_instituicao" unique="false" columns="fk_instituticao"/>
+    </table>
+    <table name="tb_instituicao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_instituicao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="representante" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="telefone" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="cidade" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="estado" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="pais" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="descricao" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id_instituicao"/>
+      <exported-key name="fk_tb_instituicao" table="tb_emprestimo" schema="" catalog="museuid" columns="fk_instituicao"/>
+      <index name="nome_UNIQUE" unique="true" columns="nome"/>
+    </table>
+    <table name="tb_local" schema="" catalog="museuid" type="TABLE">
+      <column name="id_local" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="fk_setor" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_local"/>
+      <foreign-key name="fk_tb_local_tb_setor1" columns="fk_setor" ref-table="tb_setor" ref-schema="" ref-catalog="museuid" ref-columns="id_setor" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_tb_localizacao_tb_local1" table="tb_localizacao" schema="" catalog="museuid" columns="fk_local"/>
+      <index name="fk_tb_local_tb_setor_idx" unique="false" columns="fk_setor"/>
+    </table>
+    <table name="tb_localizacao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_localizacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="fk_local" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fk_catalogacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_localizacao"/>
+      <foreign-key name="fk_tb_localizacao_tb_catalogacao1" columns="fk_catalogacao" ref-table="tb_catalogacao" ref-schema="" ref-catalog="museuid" ref-columns="id_catalogacao" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_tb_localizacao_tb_local1" columns="fk_local" ref-table="tb_local" ref-schema="" ref-catalog="museuid" ref-columns="id_local" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fk_tb_localizacao_tb_catalogacao1_idx" unique="false" columns="fk_catalogacao"/>
+      <index name="fk_tb_localizacao_tb_local1_idx" unique="false" columns="fk_local"/>
+    </table>
+    <table name="tb_movimentacao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_movimentacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="objetos" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="responsavel" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="local_origem" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="local_atual" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="tipo" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data_criacao" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id_movimentacao"/>
+    </table>
+    <table name="tb_organizacao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_orgao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="sigla" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="fax" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="telefone" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="logradouro" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="bairro" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="cidade" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="estado" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="pais" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data_cadastro" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id_orgao"/>
+      <exported-key name="fk_tb_setor_tb_orgao1" table="tb_setor" schema="" catalog="museuid" columns="fk_orgao"/>
+    </table>
+    <table name="tb_setor" schema="" catalog="museuid" type="TABLE">
+      <column name="id_setor" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descricao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="fk_orgao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_setor"/>
+      <foreign-key name="fk_tb_setor_tb_orgao1" columns="fk_orgao" ref-table="tb_organizacao" ref-schema="" ref-catalog="museuid" ref-columns="id_orgao" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_tb_local_tb_setor1" table="tb_local" schema="" catalog="museuid" columns="fk_setor"/>
+      <index name="fk_tb_setor_tb_orgao_idx" unique="false" columns="fk_orgao"/>
+    </table>
+    <table name="tb_tipo_usuario" schema="" catalog="museuid" type="TABLE">
+      <column name="id_tipo_usuario" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id_tipo_usuario"/>
+      <exported-key name="fk_tb_usuario_tb_tipo_usuario" table="tb_usuario" schema="" catalog="museuid" columns="fk_tipo_usuario"/>
+    </table>
+    <table name="tb_usuario" schema="" catalog="museuid" type="TABLE">
+      <column name="id_usuario" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="login" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="senha" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="email" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="status" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="descricao" sqlType="VARCHAR" precision="300" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="data_criacao" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="fk_tipo_usuario" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_usuario"/>
+      <foreign-key name="fk_tb_usuario_tb_tipo_usuario" columns="fk_tipo_usuario" ref-table="tb_tipo_usuario" ref-schema="" ref-catalog="museuid" ref-columns="id_tipo_usuario" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="tb_validacao_ibfk_1" table="tb_validacao" schema="" catalog="museuid" columns="fk_responsavel"/>
+      <index name="fk_tb_usuario_tb_tipo_usuario_idx" unique="false" columns="fk_tipo_usuario"/>
+    </table>
+    <table name="tb_validacao" schema="" catalog="museuid" type="TABLE">
+      <column name="id_validacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="categoria" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="subcategoria" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="total" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="validados" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="invalidados" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="status" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="data" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="fk_responsavel" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_validacao"/>
+      <foreign-key name="tb_validacao_ibfk_1" columns="fk_responsavel" ref-table="tb_usuario" ref-schema="" ref-catalog="museuid" ref-columns="id_usuario" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="tb_validacao_item_ibfk_2" table="tb_validacao_item" schema="" catalog="museuid" columns="fk_validacao"/>
+      <index name="fk_responsavel_idx" unique="false" columns="fk_responsavel"/>
+    </table>
+    <table name="tb_validacao_item" schema="" catalog="museuid" type="TABLE">
+      <column name="id_item_validacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="status" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="fk_catalogacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fk_validacao" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_item_validacao"/>
+      <foreign-key name="tb_validacao_item_ibfk_1" columns="fk_catalogacao" ref-table="tb_catalogacao" ref-schema="" ref-catalog="museuid" ref-columns="id_catalogacao" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="tb_validacao_item_ibfk_2" columns="fk_validacao" ref-table="tb_validacao" ref-schema="" ref-catalog="museuid" ref-columns="id_validacao" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="tb_visitantes" schema="" catalog="museuid" type="TABLE">
+      <column name="id_visitante" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nome" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="funcao" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="cidade" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="estado" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="pais" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="data_visita" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="descricao" sqlType="VARCHAR" precision="450" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="tipo" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id_visitante"/>
+    </table>
+  </data-source>
+</component>

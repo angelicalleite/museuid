@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.URL?>
+
+<fx:root prefHeight="700.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="50.0" styleClass="box-menus-subtela" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <TextField fx:id="txtIdentificador" layoutX="589.0" layoutY="13.0" prefHeight="49.0" prefWidth="417.0" promptText="Número Ordem /  Etiqueta RFID" styleClass="identificadores" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="8.0" />
+                <StackPane AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                    <children>
+                        <Button contentDisplay="TOP" focusTraversable="false" mnemonicParsing="false" onAction="#detalhes" prefHeight="40.0" prefWidth="200.0" style="" text="Identificar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-info" />
+                        <String fx:value="menu-blue" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                </StackPane>
+            </children>
+        </AnchorPane>
+        <HBox prefHeight="60.0" prefWidth="1207.0" styleClass="box-topo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lbTitulo" focusTraversable="false" layoutX="10.0" maxWidth="1.7976931348623157E308" styleClass="titulo" text="Título" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                </Label>
+                <ToggleButton focusTraversable="false" mnemonicParsing="false" onAction="#telaIdentificar" text="">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-identificacao" />
+                    </styleClass>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                    </toggleGroup>
+                </ToggleButton>
+            </children>
+        </HBox>
+        <AnchorPane AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <ScrollPane fitToWidth="true" focusTraversable="false" prefViewportHeight="500.0" prefViewportWidth="929.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+                    <content>
+                        <GridPane hgap="20.0" vgap="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+                            <children>
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Catalogação" wrapText="true" GridPane.columnSpan="3">
+                                    <styleClass>
+                                        <String fx:value="titulo-identificao" />
+                                        <String fx:value="titulo-id-catalogacao" />
+                                        <String fx:value="box-titulo-identificacao" />
+                                    </styleClass>
+                                </Label>
+                                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="1">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Número Ordem:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtNumOrdem" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Etiqueta RFID:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtEtiquetaRfid" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Dimensões:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtDimesoes" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="2">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Localização:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtLocalizacao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Empréstimo:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtEmprestimoFossil" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Número Partes:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtNumPartes" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="3">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Procêdencia:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtProcedencia" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Detalhes Procêdencia:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtDeatlhesProcedencia" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="316.0" layoutY="105.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Data Entrada:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtDataEntrada" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Estratigrafia" GridPane.rowIndex="5">
+                                    <styleClass>
+                                        <String fx:value="titulo-identificao" />
+                                        <String fx:value="titulo-id-estratigrafia" />
+                                        <String fx:value="box-titulo-identificacao" />
+                                    </styleClass>
+                                </Label>
+                                <HBox alignment="CENTER_LEFT" layoutX="732.0" layoutY="104.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="6">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Grupo:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtGrupoEstratigrafia" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="174.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="7">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Formação:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtFormacao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" />
+                                    </children>
+                                </HBox>
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Coleção" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                                    <styleClass>
+                                        <String fx:value="titulo-identificao" />
+                                        <String fx:value="titulo-id-colecao" />
+                                        <String fx:value="box-titulo-identificacao" />
+                                    </styleClass>
+                                </Label>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="384.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Nome:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtColecao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="517.0" layoutY="190.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Descrição:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtColecaoDescricao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" />
+                                    </children>
+                                </HBox>
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Localização" GridPane.rowIndex="9">
+                                    <styleClass>
+                                        <String fx:value="titulo-identificao" />
+                                        <String fx:value="titulo-id-localizacao" />
+                                        <String fx:value="box-titulo-identificacao" />
+                                    </styleClass>
+                                </Label>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="10">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Orgão:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtOrgao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="314.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="11">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Setor:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtSetor" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="12">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Local:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtLocal" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" />
+                                    </children>
+                                </HBox>
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Designação" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                                    <styleClass>
+                                        <String fx:value="titulo-identificao" />
+                                        <String fx:value="titulo-id-designacao" />
+                                        <String fx:value="box-titulo-identificacao" />
+                                    </styleClass>
+                                </Label>
+                                <HBox spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Ordem:" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                                        <Label fx:id="txtOrdem" layoutX="20.0" layoutY="50.0" prefHeight="30.0" styleClass="lb-id-valor" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Classe:" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0" />
+                                        <Label fx:id="txtClasse" layoutX="20.0" layoutY="80.0" prefHeight="30.0" styleClass="lb-id-valor" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                                    <children>
+                                        <Label layoutX="381.0" layoutY="414.0" minWidth="-Infinity" styleClass="lb-id-descricao" text="Família:" wrapText="true" AnchorPane.leftAnchor="381.0" AnchorPane.topAnchor="414.0" />
+                                        <Label fx:id="txtFamilia" layoutX="431.0" layoutY="414.0" prefHeight="30.0" styleClass="lb-id-valor" AnchorPane.leftAnchor="431.0" AnchorPane.rightAnchor="-359.0" AnchorPane.topAnchor="414.0" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Genêro: " wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="120.0" />
+                                        <Label fx:id="txtGenero" layoutX="20.0" layoutY="140.0" prefHeight="30.0" styleClass="lb-id-valor" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                                    <children>
+                                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Espécie: " wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="150.0" />
+                                        <Label fx:id="txtEspecie" layoutX="20.0" layoutY="170.0" prefHeight="30.0" styleClass="lb-id-valor" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnSpan="3" GridPane.rowIndex="14">
+                                    <children>
+                                        <Label layoutX="503.0" layoutY="244.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" text="Empréstimo" GridPane.rowIndex="12" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="titulo-identificao" />
+                                                <String fx:value="titulo-id-emprestimo" />
+                                                <String fx:value="box-titulo-identificacao" />
+                                            </styleClass>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" fillHeight="false" layoutX="10.0" layoutY="380.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.rowIndex="15">
+                                    <children>
+                                        <Label styleClass="lb-id-descricao" text="Status:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtEmprestimoStatus" layoutX="10.0" layoutY="17.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" fillHeight="false" layoutX="10.0" layoutY="505.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="1" GridPane.rowIndex="15">
+                                    <children>
+                                        <Label styleClass="lb-id-descricao" text="N° Empréstimo:" wrapText="true" GridPane.rowIndex="1" />
+                                        <Label fx:id="txtIdEmprestimo" layoutX="10.0" layoutY="17.0" styleClass="lb-id-valor" wrapText="true" />
+                                    </children>
+                                </HBox>
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" />
+                                <ColumnConstraints hgrow="SOMETIMES" />
+                                <ColumnConstraints hgrow="SOMETIMES" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" valignment="CENTER" />
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                                <RowConstraints minHeight="25.0" prefHeight="30.0" />
+                                <RowConstraints minHeight="25.0" prefHeight="30.0" />
+                                <RowConstraints minHeight="20.0" />
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" />
+                                <RowConstraints minHeight="25.0" prefHeight="30.0" />
+                                <RowConstraints minHeight="25.0" prefHeight="30.0" />
+                                <RowConstraints minHeight="20.0" />
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                                <RowConstraints minHeight="20.0" />
+                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                                <RowConstraints minHeight="25.0" prefHeight="30.0" />
+                            </rowConstraints>
+                        </GridPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../css/default.css" />
+        <URL value="@../css/custom.css" />
+    </stylesheets>
+</fx:root>

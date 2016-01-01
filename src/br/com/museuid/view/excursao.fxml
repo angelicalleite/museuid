@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.URL?>
+
+<fx:root prefHeight="671.0" prefWidth="1261.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="60.0" prefWidth="1207.0" styleClass="box-topo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lbTitulo" layoutX="10.0" maxWidth="1.7976931348623157E308" styleClass="titulo" text="Título" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                </Label>
+                <TextField fx:id="txtPesquisar" prefHeight="50.0" prefWidth="417.0" promptText="Pesquisar" styleClass="pesquisar" />
+                <ToggleButton mnemonicParsing="false" onAction="#telaCadastro" text="">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-add" />
+                    </styleClass>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                    </toggleGroup>
+                </ToggleButton>
+                <ToggleButton layoutX="1150.0" layoutY="27.0" mnemonicParsing="false" onAction="#telaEdicao" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-editar" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1150.0" layoutY="27.0" mnemonicParsing="false" onAction="#telaExcluir" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-excluir" />
+                    </styleClass>
+                </ToggleButton>
+            </children>
+        </HBox>
+        <GridPane fx:id="telaCadastro" hgap="10.0" layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <Label layoutX="251.0" layoutY="16.0" styleClass="lb-info-requerido" text="Instituição" />
+                <ComboBox fx:id="cbInstituicao" layoutX="702.0" layoutY="40.0" maxWidth="1.7976931348623157E308" prefHeight="35.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList" />
+                    </items>
+                </ComboBox>
+                <Label styleClass="lb-info-requerido" text="Curso" GridPane.columnIndex="2" />
+                <TextField id="txtFiloPopular" fx:id="txtCurso" styleClass="campo" visible="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                <Label layoutX="10.0" layoutY="171.0" prefHeight="18.0" prefWidth="81.0" styleClass="lb-info-requerido" text="Horário" GridPane.columnIndex="4" />
+                <TextField id="txtFiloPopular" fx:id="txtHorario" layoutX="10.0" layoutY="193.0" styleClass="campo" visible="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <Label layoutX="160.0" layoutY="72.0" styleClass="lb-info-requerido" text="Data Visita" GridPane.columnIndex="5" />
+                <DatePicker fx:id="dtVisita" editable="false" maxWidth="1.7976931348623157E308" prefHeight="35.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                <Label styleClass="lb-info-requerido" text="Responsável" GridPane.rowIndex="2" />
+                <TextField id="txtFiloPopular" fx:id="txtResponsavel" layoutX="10.0" layoutY="38.0" styleClass="campo" visible="true" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+                <Label layoutX="392.0" layoutY="12.0" styleClass="lb-info-requerido" text="N° Participantes" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <TextField id="txtFiloPopular" fx:id="txtParticipantes" layoutX="336.0" layoutY="40.0" styleClass="campo" visible="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Label layoutX="10.0" layoutY="72.0" styleClass="lb-info-requerido" text="Contato" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <TextField id="txtOrdemIngles" fx:id="txtContato" disable="false" layoutX="10.0" layoutY="158.0" prefWidth="245.0" styleClass="campo" text="" visible="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                <Label layoutX="446.0" layoutY="148.0" styleClass="lb-info" text="Guias" GridPane.rowIndex="4" />
+                <TextField id="txtFiloPopular" fx:id="txtGuias" layoutX="10.0" layoutY="105.0" styleClass="campo" visible="true" GridPane.columnSpan="4" GridPane.rowIndex="5" />
+                <Label layoutX="10.0" layoutY="81.0" styleClass="lb-info-requerido" text="Agendamento" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                    <children>
+                        <ToggleButton fx:id="btInativo" minHeight="35.0" minWidth="50.0" mnemonicParsing="false" onAction="#agendaAtiva" prefWidth="60.0" selected="true" styleClass="bt-agendar-inativo" text="Inativo" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="agenda" />
+                            </toggleGroup>
+                        </ToggleButton>
+                        <ToggleButton fx:id="btAtivo" layoutX="404.0" layoutY="180.0" minHeight="35.0" minWidth="50.0" mnemonicParsing="false" onAction="#agendaInativa" prefWidth="60.0" styleClass="bt-agendar-ativo" text="Ativo" toggleGroup="$agenda" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                    </children>
+                </HBox>
+                <Label layoutX="341.0" layoutY="171.0" styleClass="lb-info-requerido" text="Status" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                <ComboBox fx:id="cbStatus" layoutX="10.0" layoutY="40.0" maxWidth="1.7976931348623157E308" prefHeight="35.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList" />
+                    </items>
+                </ComboBox>
+                <Label styleClass="lb-info" text="Descrição / Observação" GridPane.rowIndex="6" />
+                <TextArea fx:id="txtDescricao" wrapText="true" GridPane.columnSpan="6" GridPane.rowIndex="7" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints maxWidth="319.0" minWidth="94.0" prefWidth="303.0" />
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints maxWidth="120.0" minWidth="111.0" prefWidth="115.0" />
+                <ColumnConstraints maxWidth="119.0" minWidth="110.0" prefWidth="115.0" />
+                <ColumnConstraints maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="35.0" prefHeight="35.0" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="35.0" prefHeight="35.0" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="35.0" />
+                <RowConstraints minHeight="35.0" prefHeight="35.0" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <AnchorPane fx:id="telaEdicao" visible="false" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <TableView fx:id="tbExcursao" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+                    <columns>
+                        <TableColumn fx:id="colId" maxWidth="100.0" minWidth="50.0" prefWidth="50.0" text="Id" />
+                        <TableColumn fx:id="colInstituicao" maxWidth="500.0" minWidth="200.0" prefWidth="250.0" text="Instituição" />
+                        <TableColumn fx:id="colCurso" maxWidth="500.0" minWidth="200.0" prefWidth="250.0" text="Curso" />
+                        <TableColumn fx:id="colHorario" maxWidth="150.0" minWidth="100.0" prefWidth="100.0" text="Horário" />
+                        <TableColumn fx:id="colDataExcursao" maxWidth="150.0" minWidth="130.0" prefWidth="130.0" text="Data Visitante" />
+                        <TableColumn fx:id="colResponsavel" maxWidth="300.0" minWidth="120.0" prefWidth="200.0" text="Responsável" />
+                        <TableColumn fx:id="colParticipantes" maxWidth="200.0" minWidth="100.0" prefWidth="150.0" text="Participantes" />
+                        <TableColumn fx:id="colContato" maxWidth="300.0" minWidth="150.0" prefWidth="200.0" text="Telefone" />
+                        <TableColumn fx:id="colGuias" maxWidth="400.0" minWidth="150.0" prefWidth="300.0" text="Guias" />
+                        <TableColumn fx:id="colAgendar" maxWidth="200.0" minWidth="100.0" prefWidth="150.0" text="Agendamento" />
+                        <TableColumn fx:id="colStatusAgenda" maxWidth="300.0" minWidth="100.0" prefWidth="200.0" text="Status" />
+                        <TableColumn fx:id="colDescricao" maxWidth="500.0" minWidth="200.0" prefWidth="400.0" text="Descrição" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="50.0" styleClass="box-menus-subtela" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <StackPane AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                    <children>
+                        <Button fx:id="btSalvar" contentDisplay="TOP" mnemonicParsing="false" onAction="#salvar" prefHeight="40.0" prefWidth="200.0" style="" text="Salvar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-salvar" />
+                        <String fx:value="menu-green" />
+                            </styleClass>
+                        </Button>
+                        <Button id="" fx:id="btEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#editar" prefHeight="40.0" prefWidth="200.0" style="" text="Editar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-editar" />
+                        <String fx:value="menu-laranja" />
+                            </styleClass>
+                        </Button>
+                        <Button id="" fx:id="btExcluir" contentDisplay="TOP" mnemonicParsing="false" onAction="#excluir" prefHeight="40.0" prefWidth="200.0" style="" text="Excluir" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-excluir" />
+                        <String fx:value="menu-red" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                </StackPane>
+                <Label fx:id="legenda" layoutX="36.0" layoutY="17.0" styleClass="lb-info-requerido" text="Campos obrigatórios" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../css/default.css" />
+        <URL value="@../css/custom.css" />
+    </stylesheets>
+</fx:root>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1361.0" styleClass="box-dash" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="330.0" layoutY="169.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="280.0" prefWidth="280.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="15.0" minWidth="15.0" prefWidth="15.0" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="280.0" prefWidth="280.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="196.0" minHeight="10.0" prefHeight="196.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="300.0" minHeight="34.0" prefHeight="117.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="114.0" minHeight="97.0" prefHeight="107.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+            <VBox spacing="20.0" styleClass="box-info-dashboard">
+               <children>
+                  <HBox styleClass="info-visitante">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" styleClass="info-texto" text="Catalogações" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbTotalCatalogacoes" layoutX="10.0" layoutY="10.0" styleClass="box-contagem-quantidade" text="0" />
+                     </children>
+                  </HBox>
+                  <HBox styleClass="info-catalogacao">
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" styleClass="info-texto" text="Visitantes" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbTotalVisitantes" layoutX="10.0" layoutY="10.0" styleClass="box-contagem-quantidade" text="0" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" top="10.0" />
+               </padding>
+            </VBox>
+            <AnchorPane styleClass="box-grafico" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowSpan="6">
+               <children>
+                  <HBox layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="box-titulo-dash" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="tituloGrafico" layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="titulo-dash" text="Titulo" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" HBox.hgrow="ALWAYS" />
+                        <ToggleButton mnemonicParsing="false" onAction="#catalogacao" selected="true" text="Button">
+                           <styleClass>
+                              <String fx:value="menu-catalogar" />
+                              <String fx:value="submenus" />
+                           </styleClass>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="grupoGrafico" />
+                           </toggleGroup></ToggleButton>
+                        <ToggleButton layoutX="316.0" layoutY="10.0" mnemonicParsing="false" onAction="#visitantes" text="Button" toggleGroup="$grupoGrafico">
+                           <styleClass>
+                              <String fx:value="menu-visitas" />
+                              <String fx:value="submenus" />
+                           </styleClass></ToggleButton>
+                        <ToggleButton layoutX="368.0" layoutY="10.0" mnemonicParsing="false" onAction="#emprestimo" text="Button" toggleGroup="$grupoGrafico">
+                           <styleClass>
+                              <String fx:value="menu-emprestimo" />
+                              <String fx:value="submenus" />
+                           </styleClass></ToggleButton>
+                        <ToggleButton layoutX="420.0" layoutY="10.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#movimentacao" text="Button" toggleGroup="$grupoGrafico">
+                           <styleClass>
+                              <String fx:value="menu-movimentacao" />
+                              <String fx:value="submenus" />
+                           </styleClass></ToggleButton>
+                     </children>
+                  </HBox>
+                  <AnchorPane fx:id="boxGrafico" layoutX="20.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="250.0" prefHeight="200.0" prefWidth="200.0" styleClass="box-dark" GridPane.columnIndex="5" GridPane.rowSpan="6">
+               <children>
+                  <HBox layoutX="-120.0" layoutY="14.0" styleClass="box-titulo-dashboard" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+                     <children>
+                        <Label fx:id="tituloCatalogacao" layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="titulo-dash-cinza" text="Categorias" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" HBox.hgrow="ALWAYS" />
+                        <ToggleButton layoutX="316.0" layoutY="10.0" mnemonicParsing="false" onAction="#designacao" selected="true" text="Button">
+                           <styleClass>
+                              <String fx:value="submenus" />
+                              <String fx:value="menu-designacao" />
+                           </styleClass>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="grupoCatalogacao" />
+                           </toggleGroup></ToggleButton>
+                        <ToggleButton layoutX="368.0" layoutY="10.0" mnemonicParsing="false" onAction="#estratigrafia" text="Button" toggleGroup="$grupoCatalogacao">
+                           <styleClass>
+                              <String fx:value="submenus" />
+                              <String fx:value="menu-estratigrafia" />
+                           </styleClass></ToggleButton>
+                        <ToggleButton layoutX="420.0" layoutY="10.0" mnemonicParsing="false" onAction="#colecao" text="Button" toggleGroup="$grupoCatalogacao">
+                           <styleClass>
+                              <String fx:value="submenus" />
+                              <String fx:value="menu-colecao" />
+                           </styleClass></ToggleButton>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="25.0" styleClass="box-subtitulos" text="NOME                                                               QUANTIDADE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+                  <ScrollPane fitToWidth="true" layoutY="84.0" prefHeight="200.0" prefWidth="200.0" styleClass="scroll-dash" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="61.0">
+                     <content>
+                        <VBox fx:id="boxCatalogacao" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="20.0" layoutY="52.0" styleClass="box-subtitulos-solido" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane styleClass="box-acompanhamento" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="7" GridPane.rowSpan="3">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0" styleClass="box-titulo-acompanhamento" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ToggleButton alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#acompanhamentoExcursao" selected="true" styleClass="menus-acompanhamento" text="Excurções" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="grupoAcompanhamento" />
+                           </toggleGroup></ToggleButton>
+                        <ToggleButton layoutX="79.0" layoutY="10.0" mnemonicParsing="false" onAction="#acompanhamentoEmprestimo" styleClass="menus-acompanhamento" text="Empréstimos" toggleGroup="$grupoAcompanhamento" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="10.0" />
+                        <Label fx:id="tituloGrafico1" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="titulo-acompanhamento" text="Acompanhe" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="boxTituloAcompanhamento" alignment="CENTER_LEFT" layoutX="12.0" layoutY="45.0" prefHeight="25.0" spacing="10.0" styleClass="box-titulos-acompanhamento" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0" />
+                  <ScrollPane fitToWidth="true" styleClass="scroll-acompanhamento" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="75.0">
+                     <content>
+                        <VBox fx:id="boxAcompanhamento" prefWidth="100.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="739.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" GridPane.rowSpan="6">
+               <children>
+                  <HBox layoutX="-120.0" layoutY="14.0" styleClass="box-titulo-dashboard" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="titulo-dash-cinza" text="Catalogações Recentes" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Label prefHeight="25.0" styleClass="box-subtitulos" text="N° ORDEM                                                              DESIGNAÇÃO" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+                  <ScrollPane fitToWidth="true" layoutY="84.0" prefHeight="200.0" prefWidth="200.0" styleClass="scroll-dash" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="61.0">
+                     <content>
+                        <VBox fx:id="boxRecentes" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="20.0" layoutY="52.0" styleClass="box-subtitulos-solido" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </AnchorPane>
+            <VBox spacing="10.0" GridPane.rowIndex="9" GridPane.rowSpan="4">
+               <children>
+                  <HBox spacing="10.0" styleClass="info-designacao" GridPane.rowIndex="6">
+                     <children>
+                        <Label layoutX="104.0" layoutY="89.0" maxWidth="1.7976931348623157E308" styleClass="descricao-info" text="Designações" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbTotalDesignacao" layoutX="100.0" layoutY="6.0" styleClass="contagem-info" text="0" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0" styleClass="info-colecao" GridPane.rowIndex="6">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" styleClass="descricao-info" text="Coleções" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbTotalColecoes" styleClass="contagem-info" text="0" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0" styleClass="info-estratigrafia" GridPane.rowIndex="6">
+                     <children>
+                        <Label layoutX="165.0" layoutY="190.0" maxWidth="1.7976931348623157E308" styleClass="descricao-info" text="Estratigrafias" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbTotalEstratigrafias" layoutX="164.0" layoutY="110.0" styleClass="contagem-info" text="0" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/default.css" />
+      <URL value="@../css/custom.css" />
+   </stylesheets>
+</fx:root>

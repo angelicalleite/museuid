@@ -1,0 +1,310 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.logo {
+    -fx-image: url("../img/logo-app.png");
+}
+
+.box-logo {
+    -fx-alignment: center;
+    -fx-max-height: 65px;
+    -fx-min-height: 65px;
+    -fx-cursor: hand;
+}
+
+.box-logo:hover,
+.box-logo:selected {
+    -fx-opacity: 0.8;
+}
+
+/*............. Box Menus .............*/
+
+.box {
+    -fx-background-color: #333;
+    -fx-border-color: #2f2f2f;
+    -fx-border-width: 0 0.5 0 0;
+}
+
+.box-menus {
+    -fx-padding: 0;
+    -fx-min-width: 200px;
+    -fx-pref-width: 200px;
+}
+
+.menus {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f0f0f0;
+    -fx-pref-height: 35px;
+    -fx-min-height: 35px;
+    -fx-padding: 0 0 0 20;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 10;
+}
+
+.menus:hover {
+    -fx-text-fill: #cde073;
+    -fx-background-color: #2f2f2f;
+}
+
+.menus:selected {
+    -fx-background-color: #cde073;
+    -fx-border-color: #c4d66c;
+    -fx-text-fill: #3b3b3b;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+
+.menu-grupo {
+    -fx-background-image: url("../img/icon/menu-ative2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+}
+
+.menu-grupo:selected {
+    -fx-background-image: url("../img/icon/menu-ative.png");
+}
+
+.menu-grupo-inativo {
+    -fx-background-image: url("../img/icon/menu-inativo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+}
+
+.menu-grupo-inativo:selected {
+    -fx-background-image: url("../img/icon/menu-inativo2.png");
+}
+
+.menu-catalogacao {
+    -fx-graphic: url("../img/icon/catalogar.png");
+}
+
+.menu-catalogacao:selected {
+    -fx-graphic: url("../img/icon/catalogar-b.png");
+}
+
+.menu-visitantes {
+    -fx-graphic: url("../img/icon/user.png");
+}
+
+.menu-visitantes:selected {
+    -fx-graphic: url("../img/icon/user-b.png");
+}
+
+.menu-emprestimo {
+    -fx-graphic: url("../img/icon/emprestimo.png");
+}
+
+.menu-emprestimo:selected {
+    -fx-graphic: url("../img/icon/emprestimo-b.png");
+}
+
+.menu-relatorios {
+    -fx-graphic: url("../img/icon/relatorio.png");
+}
+
+.menu-relatorios:selected {
+    -fx-graphic: url("../img/icon/relatorio-h.png");
+}
+
+.menu-identificacao {
+    -fx-graphic: url("../img/icon/id.png");
+}
+
+.menu-identificacao:selected {
+    -fx-graphic: url("../img/icon/id-b.png");
+}
+
+.menu-pesquisar {
+    -fx-graphic: url("../img/icon/pesquisar.png");
+}
+
+.menu-pesquisar:selected {
+    -fx-graphic: url("../img/icon/pesquisar-b.png");
+}
+
+.menu-movimentacao {
+    -fx-graphic: url("../img/icon/movi.png");
+}
+
+.menu-movimentacao:selected {
+    -fx-graphic: url("../img/icon/movi-b.png");
+}
+
+.menu-seguranca {
+    -fx-graphic: url("../img/icon/valida.png");
+}
+
+.menu-seguranca:selected {
+    -fx-graphic: url("../img/icon/valida-b.png");
+}
+
+.menu-localizacao {
+    -fx-graphic: url("../img/icon/localizacao.png");
+}
+
+.menu-localizacao:selected {
+    -fx-graphic: url("../img/icon/localizacao-b.png");
+}
+
+.menu-utilidade {
+    -fx-graphic: url("../img/icon/util.png");
+}
+
+.menu-utilidade:selected {
+    -fx-graphic: url("../img/icon/util-b.png");
+}
+
+.box-submenus {
+    -fx-background-color: #2f2f2f;
+    -fx-padding: 0 0 0 45;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.submenus {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d4d4d4;
+    -fx-pref-height: 30px;
+    -fx-min-height: 30px;
+    -fx-padding: 0 0 0 10;
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-graphic: url("../img/icon/submenu-ative.png");
+    -fx-graphic-text-gap: 5;
+}
+
+.submenus:hover {
+    -fx-text-fill: #cde073;
+    -fx-graphic: url("../img/icon/submenu-inativo.png");
+}
+
+.submenus:selected {
+    -fx-text-fill: #cde073;
+    -fx-graphic: url("../img/icon/submenu-inativo.png");
+}
+
+.box-user {
+    -fx-border-color: rgba(237, 237, 237, 0.1);
+    -fx-border-width: 0.5 0 0 0;
+    -fx-alignment: center;
+}
+
+.menu-sair {
+    -fx-text-fill: #c3c3c3;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-content-display: right;
+    -fx-graphic-text-gap: 10;
+    -fx-graphic: url("../img/icon/sair.png");
+}
+
+.menu-sair:hover,
+.menu-sair:selected {
+    -fx-opacity: 0.7;
+}
+
+.lb-user {
+    -fx-text-fill: #ffbe2c;
+    -fx-padding: 0 0 0 10;
+}
+
+.lb-user:hover {
+    -fx-text-fill: #c3c3c3;
+    -fx-padding: 0 0 0 10;
+    -fx-max-width: 120px;
+}
+
+/* ............. Footer Aplicação ............. */
+
+.box-footer {
+    -fx-border-color: #ebebeb;
+    -fx-border-width: 1 0 0;
+    -fx-background-insets: 0 15;
+    -fx-border-insets: 0 15;
+}
+
+.link,
+.link:visited {
+    -fx-padding: 0px;
+    -fx-text-fill: #9b9b9b;
+    -fx-alignment: center-right;
+    -fx-border-width: 0px;
+    -fx-cursor: hand;
+    -fx-underline: false;
+    -fx-graphic: url("../img/icon/logo-mini.png");
+}
+
+.link:hover,
+.link:focused {
+    -fx-padding: 0px;
+    -fx-text-fill: #c5db5a;
+    -fx-border-width: 0px;
+    -fx-underline: false;
+}
+
+.box-mensagens {
+    -fx-text-fill: #888;
+}
+
+/* ............. Scroll menus app ............. */
+
+.scroll {
+    -fx-background-color: transparent !important;
+    -fx-background-insets: -1px !important;
+    -fx-padding: 0px;
+    -fx-border-width: 0px !important;
+}
+
+.scroll > *.viewport {
+    -fx-background-color: transparent !important;
+    -fx-background-insets: 0;
+}
+
+.scroll > *.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-pref-width: 4;
+}
+
+.scroll > *.scroll-bar > *.thumb {
+    -fx-background-color: #cde073;
+    -fx-border-color: #cde073;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 0 0.5 0 0;
+}
+
+.scroll > *.scroll-bar:vertical > *.track {
+    -fx-background-color: transparent;
+}
+
+.scroll > *.scroll-bar:vertical > *.track-background {
+    -fx-background-color: transparent;
+}
+
+.scroll > *.scroll-bar:vertical > *.decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.scroll > *.scroll-bar > *.decrement-button > *.decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.scroll > *.scroll-bar:vertical > *.increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.scroll > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}

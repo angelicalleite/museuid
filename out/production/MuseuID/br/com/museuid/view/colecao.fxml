@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.URL?>
+
+<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="60.0" prefWidth="1207.0" styleClass="box-topo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lbTitulo" alignment="BOTTOM_CENTER" layoutX="10.0" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="855.0" styleClass="titulo" text="Título" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                </Label>
+                <TextField fx:id="txtPesquisar" prefHeight="50.0" prefWidth="417.0" promptText="Pesquisar" styleClass="pesquisar" />
+                <ToggleButton mnemonicParsing="false" onAction="#telaCadastro" text="">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-add" />
+                    </styleClass>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                    </toggleGroup>
+                </ToggleButton>
+                <ToggleButton layoutX="1150.0" layoutY="27.0" mnemonicParsing="false" onAction="#telaEdicao" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-editar" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1150.0" layoutY="27.0" mnemonicParsing="false" onAction="#telaExcluir" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-excluir" />
+                    </styleClass>
+                </ToggleButton>
+            </children>
+        </HBox>
+        <GridPane fx:id="telaCadastro" hgap="10.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="905.0" minWidth="10.0" prefWidth="685.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="235.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="35.0" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label styleClass="lb-info-requerido" text="Nome" />
+                <TextField fx:id="txtNome" styleClass="campo" visible="true" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                <Label styleClass="lb-info" text="Descrição" GridPane.rowIndex="2" />
+                <TextArea fx:id="txtDescricao" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+        <AnchorPane fx:id="telaEdicao" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <TableView fx:id="tbColecao" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+                    <columns>
+                        <TableColumn fx:id="colId" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="Id" />
+                        <TableColumn fx:id="colNome" maxWidth="300.0" minWidth="150.0" prefWidth="200.0" text="Nome" />
+                        <TableColumn fx:id="colDescricao" maxWidth="900.0" minWidth="150.0" prefWidth="250.0" text="Descrição" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="50.0" styleClass="box-menus-subtela" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <StackPane AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                    <children>
+                        <Button fx:id="btSalvar" contentDisplay="TOP" mnemonicParsing="false" onAction="#salvar" prefHeight="40.0" prefWidth="200.0" style="" text="Salvar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-salvar" />
+                        <String fx:value="menu-green" />
+                            </styleClass>
+                        </Button>
+                        <Button id="" fx:id="btEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#editar" prefHeight="40.0" prefWidth="200.0" style="" text="Editar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-editar" />
+                        <String fx:value="menu-laranja" />
+                            </styleClass>
+                        </Button>
+                        <Button id="" fx:id="btExcluir" contentDisplay="TOP" mnemonicParsing="false" onAction="#excluir" prefHeight="40.0" prefWidth="200.0" style="" text="Excluir" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-excluir" />
+                        <String fx:value="menu-red" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                </StackPane>
+                <Label fx:id="legenda" layoutX="36.0" layoutY="17.0" styleClass="lb-info-requerido" text="Campos obrigatórios" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../css/default.css" />
+        <URL value="@../css/custom.css" />
+    </stylesheets>
+</fx:root>

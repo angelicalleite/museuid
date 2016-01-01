@@ -1,0 +1,134 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.background {
+    -fx-background-image: url("../img/background.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-background-position: top;
+    -fx-background-repeat: no-repeat;
+}
+
+.box-janela {
+    -fx-padding: 5 5 0 0;
+    -fx-spacing: 5;
+}
+
+.minimizar,
+.close {
+    -fx-background-color: transparent;
+    -fx-content-display: graphic-only;
+    -fx-cursor: hand;
+}
+
+.minimizar:hover,
+.minimizar:selected,
+.close:hover,
+.close:selected {
+    -fx-opacity: 0.8;
+}
+
+.close {
+    -fx-graphic: url("../img/icon/fechar.png");
+}
+
+.minimizar {
+    -fx-graphic: url("../img/icon/minimizar.png");
+}
+
+.logo {
+    -fx-image: url("../img/logo.png");
+}
+
+.login-img {
+    -fx-image: url("../img/login2.png");
+}
+
+.login-txt {
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 16px;
+}
+
+.box-login {
+    -fx-background-color: rgba(255, 255, 255, 1);
+    -fx-border-color: #d8d8d8;
+    -fx-effect: dropshadow(two-pass-box, rgba(0, 0, 0, 0.69), 5, 0.1, 2, 2);
+}
+
+.nome,
+.senha {
+    -fx-background-color: transparent;
+    -fx-border-color: #e8e8e8;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+    -fx-padding: 0 5 0 30;
+    -fx-text-fill: #6d6d6d;
+    -fx-prompt-text-fill: #797979;
+    -fx-highlight-fill: #dee3c0;
+    -fx-highlight-text-fill: #333;
+}
+
+.nome:focused,
+.senha:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+.nome {
+    -fx-background-image: url("../img/icon/user-b.png");
+}
+
+.senha {
+    -fx-background-image: url("../img/icon/key.png");
+}
+
+.bt-logar {
+    -fx-text-fill: #fff;
+    -fx-background-color: #cbde70;
+    -fx-border-color: #bed452;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-border-radius: 0;
+    -fx-graphic: url("../img/icon/acessar.png");
+    -fx-content-display: right;
+    -fx-cursor: hand;
+}
+
+.bt-logar:hover,
+.bt-logar:selected {
+    -fx-background-color: #d0e278;
+}
+
+.error {
+    -fx-text-fill: #ff4f4f;
+    -fx-font-size: 13px;
+}
+
+.link,
+.link:visited {
+    -fx-padding: 0;
+    -fx-content-display: left;
+    -fx-text-fill: #9b9b9b;
+    -fx-border-width: 0px;
+    -fx-cursor: hand;
+    -fx-underline: false;
+    -fx-alignment: bottom-center;
+}
+
+.link:hover,
+.link:focused {
+    -fx-padding: 0px;
+    -fx-text-fill: #c5db5a;
+    -fx-border-width: 0px;
+    -fx-underline: false;
+    -fx-alignment: bottom-center;
+}
+
+.link-museuid {
+    -fx-graphic: url("../img/icon/logo-mini.png");
+}
+
+.link-geopark {
+    -fx-graphic: url("../img/icon/geopark-mini.png");
+}

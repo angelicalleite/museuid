@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="background" stylesheets="@../../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.museuid.view.login.LoginController">
+    <children>
+        <VBox alignment="CENTER" fillWidth="false" prefHeight="619.0" prefWidth="445.0" spacing="15.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" styleClass="logo" />
+                <AnchorPane prefHeight="240.0" prefWidth="400.0">
+                    <children>
+                        <AnchorPane layoutY="17.0" prefHeight="223.0" prefWidth="389.0" styleClass="box-login" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                            <children>
+                                <TextField fx:id="txtUsuario" layoutX="68.0" layoutY="65.0" prefHeight="40.0" prefWidth="336.0" promptText="Nome Usuário" styleClass="nome" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </TextField>
+                                <PasswordField fx:id="psSenha" layoutX="68.0" layoutY="120.0" prefHeight="40.0" prefWidth="333.0" promptText="Senha" styleClass="senha" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="110.0">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </PasswordField>
+                                <Button layoutX="17.0" layoutY="235.0" mnemonicParsing="false" onAction="#logar" prefHeight="20.0" styleClass="bt-logar" text="Acessar" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                        <StackPane layoutY="-3.0" prefHeight="40.0" prefWidth="248.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fitHeight="61.0" fitWidth="271.0" pickOnBounds="true" preserveRatio="true" styleClass="login-img" />
+                                <Label alignment="CENTER" prefHeight="30.0" prefWidth="85.0" styleClass="login-txt" text="Login" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </StackPane>
+                    </children>
+                </AnchorPane>
+                <Label fx:id="lbErroLogin" alignment="CENTER" prefHeight="29.0" prefWidth="433.0" styleClass="error">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" maxHeight="30.0" prefHeight="30.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Hyperlink onAction="#linkMuseuID" text="MuseuID" textAlignment="CENTER">
+                    <styleClass>
+                        <String fx:value="link" />
+                        <String fx:value="link-museuid" />
+                    </styleClass>
+                </Hyperlink>
+                <Hyperlink layoutX="477.0" layoutY="17.0" onAction="#linkGeoPark" text="GeoPark Araripe" textAlignment="CENTER">
+                    <styleClass>
+                        <String fx:value="link" />
+                        <String fx:value="link-geopark" />
+                    </styleClass>
+                </Hyperlink>
+            </children>
+        </HBox>
+        <HBox styleClass="box-janela" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#minimizar" styleClass="minimizar" text="Minimizar" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#fechar" styleClass="close" text="Fechar" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

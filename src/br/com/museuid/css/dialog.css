@@ -1,0 +1,161 @@
+/*..... Estilos das classes de dialogs e notificações .....*/
+
+.mensagem-dialogs {
+    -fx-text-fill: #7e7e7e;
+    -fx-font-size: 12px;
+    -fx-font-family: "Open Sans", sans-serif;
+    -fx-wrap-text: true;
+}
+
+.titulo-dialogs {
+    -fx-text-fill: #575757;
+    -fx-font-size: 14px;
+    -fx-font-family: "Open Sans Semibold", sans-serif;
+}
+
+.box-msg {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-alignment: center;
+}
+
+.caixa-mensagem {
+    -fx-spacing: 5px;
+}
+
+.box-grid {
+    -fx-background-color: #fdfdfd;
+    -fx-border-color: #dedede;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-effect: dropshadow(two-pass-box, rgba(0, 0, 0, 0.45), 4, 0, 2, 3);
+    -fx-padding: 10;
+    -fx-pref-width: 495;
+    -fx-hgap: 20;
+    -fx-vgap: 15;
+}
+
+.bt-ok,
+.bt-sim,
+.bt-nao {
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-font-family: "Open Sans Semibold", sans-serif;
+    -fx-text-fill: #fff;
+    -fx-pref-height: 27;
+    -fx-pref-width: 80;
+}
+
+.bt-ok:hover,
+.bt-sim:hover,
+.bt-nao:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.9;
+    -fx-border-insets: -1px;
+    -fx-background-insets: -1;
+}
+
+.bt-ok:pressed,
+.bt-sim:pressed,
+.bt-nao:pressed {
+    -fx-label-padding: 0 2 0 0;
+}
+
+.bt-ok {
+    -fx-background-color: #5dd3c1;
+    -fx-border-color: #58bfaf;
+}
+
+.bt-sim {
+    -fx-background-color: #5cd088;
+    -fx-border-color: #50c37b;
+}
+
+.bt-nao {
+    -fx-background-color: #ff6c60;
+    -fx-border-color: #ff5749;
+}
+
+.img-dialog {
+    -fx-graphic: url("../img/dialog/dialog.png");
+    -fx-content-display: graphic-only;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+}
+
+.img-dialog-alert {
+    -fx-graphic: url("../img/dialog/alert.png");
+    -fx-content-display: graphic-only;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+}
+
+.img-dialog-confirmar {
+    -fx-graphic: url("../img/dialog/confirmar.png");
+    -fx-content-display: graphic-only;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+}
+
+.img-dialog-erro {
+    -fx-graphic: url("../img/dialog/erro.png");
+    -fx-content-display: graphic-only;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+}
+
+.box-acao-dialog {
+    -fx-alignment: center-right;
+    -fx-pref-width: 400px;
+    -fx-spacing: 10;
+}
+
+/*..... Notificações e notas .....*/
+
+.box-nota {
+    -fx-background-color: #3a3a3a;
+    -fx-border-color: #3a3a3a;
+    -fx-border-width: 0.7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.2, 2, 2);
+    -fx-padding: 5px;
+    -fx-min-height: 55px;
+    -fx-min-width: 250px;
+    -fx-max-width: 500px;
+    -fx-alignment: center-left;
+}
+
+.box-nota:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.0, 3, 3);
+}
+
+.bt-close-nota {
+    -fx-graphic: url("../img/icon/fechar.png");
+    -fx-background-color: transparent;
+    -fx-content-display: graphic-only;
+    -fx-alignment: top-right;
+    -fx-cursor: hand;
+}
+
+.nota-alerta {
+    -fx-graphic: url("../img/dialog/nota-alerta.png");
+}
+
+.nota-erro {
+    -fx-graphic: url("../img/dialog/nota-erro.png");
+}
+
+.nota-info {
+    -fx-graphic: url("../img/dialog/nota-info.png");
+}
+
+.nota-confirma {
+    -fx-graphic: url("../img/dialog/nota-confirma.png");
+}
+
+.nota-texto {
+    -fx-text-fill: #bfbfbf;
+    -fx-wrap-text: true;
+    -fx-text-alignment: left;
+    -fx-alignment: top-left;
+    -fx-padding: 5px;
+}

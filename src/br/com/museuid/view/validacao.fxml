@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.URL?>
+
+<fx:root prefHeight="639.0" prefWidth="1127.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="60.0" prefWidth="1207.0" styleClass="box-topo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lbTitulo" layoutX="10.0" maxWidth="1.7976931348623157E308" styleClass="titulo" text="Título" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                </Label>
+                <ToggleButton layoutX="1186.0" layoutY="28.0" mnemonicParsing="false" onAction="#historico" text="">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                    </toggleGroup>
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-historico" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1150.0" layoutY="27.0" mnemonicParsing="false" onAction="#localizacao" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-localizacao" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1013.0" layoutY="28.0" mnemonicParsing="false" onAction="#designacao" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-designacao" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1186.0" layoutY="28.0" mnemonicParsing="false" onAction="#estratigrafia" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-estratigrafia" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1072.0" layoutY="28.0" mnemonicParsing="false" onAction="#colecao" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-colecao" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1186.0" layoutY="28.0" mnemonicParsing="false" onAction="#geral" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-validacao" />
+                    </styleClass>
+                </ToggleButton>
+            </children>
+        </HBox>
+        <GridPane fx:id="gridValidacao" hgap="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
+            <columnConstraints>
+                <ColumnConstraints maxWidth="272.0" minWidth="167.0" prefWidth="184.0" />
+                <ColumnConstraints maxWidth="283.0" minWidth="178.0" prefWidth="266.0" />
+                <ColumnConstraints maxWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints maxWidth="94.0" minWidth="56.0" prefWidth="57.0" />
+                <ColumnConstraints maxWidth="200.0" prefWidth="200.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" />
+                <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" />
+                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="ALWAYS" />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label layoutX="10.0" layoutY="82.0" prefHeight="17.0" prefWidth="250.0" text="Validação">
+                    <styleClass>
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <StackPane prefHeight="35.0" GridPane.rowIndex="1">
+                    <children>
+                        <ComboBox fx:id="cbGenerico" layoutX="10.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" />
+                        <ComboBox fx:id="cbColecao" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" />
+                        <ComboBox fx:id="cbEstratigrafia" layoutX="10.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" />
+                        <ComboBox fx:id="cbDesignacao" layoutX="10.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                    </children>
+                </StackPane>
+                <Label text="Status" GridPane.columnIndex="5">
+                    <styleClass>
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <children>
+                        <ToggleButton fx:id="btTodos" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#todos" selected="true" styleClass="bt-left" text="Todos">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="status" />
+                            </toggleGroup>
+                        </ToggleButton>
+                        <ToggleButton fx:id="btInvalidados" mnemonicParsing="false" onAction="#invalidados" styleClass="bt-center" text="Invalidados" toggleGroup="$status" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <ToggleButton fx:id="btValidados" layoutX="404.0" layoutY="180.0" mnemonicParsing="false" onAction="#validados" styleClass="bt-right" text="Validados" toggleGroup="$status" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Número Ordem:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbNumOrdem" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Etiqueta RFID:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbEtiquetaRFID" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Número Partes:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbNumPartes" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Dimensões:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbDimesoes" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Localização:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbLocalizacao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="542.0" layoutY="474.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Designação:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbDesignacao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="504.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Estratigrafia:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbEstratigrafia" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="542.0" layoutY="504.0" spacing="5.0" styleClass="hbox-id-descricao" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                    <children>
+                        <Label minWidth="-Infinity" styleClass="lb-id-descricao" text="Coleção:" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="lbColecao" layoutX="10.0" layoutY="46.0" styleClass="lb-id-valor" wrapText="true" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="50.0" spacing="5.0" GridPane.columnSpan="6" GridPane.rowIndex="11">
+                    <children>
+                        <TextField fx:id="txtIdentificador" maxWidth="1.7976931348623157E308" onKeyPressed="#identificar" prefHeight="50.0" promptText="Número Ordem /  Etiqueta RFID" styleClass="identificadores" HBox.hgrow="ALWAYS" />
+                        <Button contentDisplay="TOP" layoutX="220.0" layoutY="13.0" minWidth="112.0" mnemonicParsing="false" onAction="#iniciar" prefHeight="40.0" prefWidth="112.0" style="" text="Iniciar">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-iniciar" />
+                        <String fx:value="menu-green" />
+                            </styleClass>
+                        </Button>
+                        <Button contentDisplay="TOP" focusTraversable="false" mnemonicParsing="false" onAction="#cancelar" prefHeight="40.0" prefWidth="200.0" style="" text="Cancelar">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-cancelar" />
+                        <String fx:value="menu-red" />
+                            </styleClass>
+                        </Button>
+                        <Button contentDisplay="TOP" focusTraversable="false" layoutX="697.0" layoutY="18.0" minWidth="111.0" mnemonicParsing="false" onAction="#finalizar" prefHeight="40.0" prefWidth="111.0" style="" text="Finalizar">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-finalizar" />
+                        <String fx:value="menu-blue" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5.0" styleClass="box-contagem" GridPane.columnSpan="6" GridPane.rowIndex="4">
+                    <children>
+                        <Label minWidth="-Infinity" text="Total :" wrapText="true" GridPane.rowIndex="1">
+                            <styleClass>
+                                <String fx:value="lb-contagem-descricao" />
+                                <String fx:value="lb-contagem-total" />
+                            </styleClass>
+                        </Label>
+                        <Label fx:id="lbTotal" layoutX="10.0" layoutY="46.0" maxWidth="1.7976931348623157E308" styleClass="lb-contagem-valor" text="0" wrapText="true" HBox.hgrow="ALWAYS" />
+                        <Label minWidth="-Infinity" text="Validados :" wrapText="true">
+                            <styleClass>
+                                <String fx:value="lb-contagem-validados" />
+                                <String fx:value="lb-contagem-descricao" />
+                            </styleClass>
+                        </Label>
+                        <Label fx:id="lbValidados" maxWidth="40.0" minWidth="10.0" styleClass="lb-contagem-valor" text="0" wrapText="true" />
+                        <Label minWidth="-Infinity" text="Invalidados :" wrapText="true">
+                            <styleClass>
+                                <String fx:value="lb-contagem-invalidados" />
+                                <String fx:value="lb-contagem-descricao" />
+                            </styleClass>
+                        </Label>
+                        <Label fx:id="lbInvalidados" alignment="CENTER_RIGHT" maxWidth="40.0" styleClass="lb-contagem-valor" text="0" />
+                    </children>
+                </HBox>
+                <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="274.0" prefViewportWidth="600.0" styleClass="box-validacao" GridPane.columnSpan="6" GridPane.rowIndex="3">
+                    <content>
+                        <FlowPane fx:id="boxValidacao" alignment="CENTER" hgap="5.0" styleClass="box-validacao-conteudo" />
+                    </content>
+                </ScrollPane>
+                <AnchorPane GridPane.columnSpan="6" GridPane.rowIndex="6">
+                    <children>
+                        <Label text="Informação Fóssil" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" GridPane.columnSpan="6" GridPane.rowIndex="6" HBox.hgrow="ALWAYS">
+                            <styleClass>
+                                <String fx:value="titulo-identificao" />
+                                <String fx:value="titulo-id-catalogacao" />
+                                <String fx:value="box-titulo-identificacao" />
+                            </styleClass>
+                        </Label>
+                        <Button layoutX="1066.0" layoutY="3.0" mnemonicParsing="false" onAction="#limpar" styleClass="clear-info-validacao" text="Limpar" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </GridPane>
+    </children>
+    <stylesheets>
+        <URL value="@../css/default.css" />
+        <URL value="@../css/custom.css" />
+    </stylesheets>
+</fx:root>

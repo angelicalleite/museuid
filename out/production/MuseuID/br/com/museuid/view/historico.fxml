@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+
+<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="60.0" prefWidth="1207.0" styleClass="box-topo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lbTitulo" layoutX="10.0" maxWidth="1.7976931348623157E308" styleClass="titulo" text="Título" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                </Label>
+                <TextField fx:id="txtPesquisar" maxHeight="1.7976931348623157E308" prefHeight="50.0" promptText="Pesquisar" styleClass="pesquisar" HBox.hgrow="ALWAYS" />
+                <ToggleButton mnemonicParsing="false" onAction="#telaHistorico" text="">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-historico" />
+                    </styleClass>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                    </toggleGroup>
+                </ToggleButton>
+            </children>
+        </HBox>
+        <AnchorPane AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <TableView fx:id="tbEmprestimo" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                    <columns>
+                        <TableColumn fx:id="colId" maxWidth="-1.0" minWidth="50.0" prefWidth="50.0" text="Id" />
+                        <TableColumn fx:id="colNumEmprestimo" maxWidth="-1.0" minWidth="120.0" prefWidth="150.0" text="N° Empréstimo" />
+                        <TableColumn fx:id="colSolicitante" maxWidth="-1.0" minWidth="220.0" prefWidth="230.0" text="Solicitante" />
+                        <TableColumn fx:id="colRG" maxWidth="-1.0" minWidth="120.0" prefWidth="150.0" text="RG" />
+                        <TableColumn fx:id="colCPF" maxWidth="-1.0" minWidth="120.0" prefWidth="150.0" text="CPF" />
+                        <TableColumn fx:id="colResponsavel" maxWidth="-1.0" minWidth="250.0" prefWidth="300.0" text="Responsável" />
+                        <TableColumn fx:id="colInstituicao" maxWidth="-1.0" minWidth="250.0" prefWidth="300.0" text="Instituição" />
+                        <TableColumn fx:id="colStatus" maxWidth="-1.0" minWidth="100.0" prefWidth="200.0" text="Status" />
+                        <TableColumn fx:id="colDataEmprestimo" maxWidth="-1.0" minWidth="130.0" prefWidth="140.0" text="Data Empréstimo" />
+                        <TableColumn fx:id="colDataDevolucao" maxWidth="-1.0" minWidth="120.0" prefWidth="130.0" text="Data Devolução" />
+                        <TableColumn fx:id="colDataEntrega" maxWidth="-1.0" minWidth="120.0" prefWidth="130.0" text="Data Entrega" />
+                        <TableColumn fx:id="colContato" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Contato" />
+                        <TableColumn fx:id="colEmail" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Email" />
+                        <TableColumn fx:id="colDescricao" maxWidth="-1.0" minWidth="300.0" prefWidth="400.0" text="Descrição" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="50.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <Button fx:id="btHistorico" contentDisplay="TOP" layoutX="2012.0" layoutY="7.0" mnemonicParsing="false" onAction="#historico" prefHeight="40.0" prefWidth="200.0" style="" text="Historico" AnchorPane.rightAnchor="0.0">
+                    <styleClass>
+                        <String fx:value="menus-acoes" />
+                        <String fx:value="acao-historico" />
+                  <String fx:value="menu-blue" />
+                    </styleClass>
+                </Button>
+                <Label fx:id="legenda" layoutY="9.0" styleClass="legenda" text="Quantidade de empréstimos encontrados: 0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../css/default.css" />
+        <URL value="@../css/custom.css" />
+    </stylesheets>
+</fx:root>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.net.URL?>
+
+<fx:root prefHeight="586.0" prefWidth="1110.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="60.0" prefWidth="1207.0" styleClass="box-topo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lbTitulo" layoutX="10.0" maxWidth="1.7976931348623157E308" styleClass="titulo" text="Título" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                </Label>
+                <TextField fx:id="txtPesquisar" prefHeight="50.0" prefWidth="417.0" promptText="Pesquisar" styleClass="pesquisar" />
+                <ToggleButton mnemonicParsing="false" onAction="#telaCadastro" text="">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-add" />
+                    </styleClass>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                    </toggleGroup>
+                </ToggleButton>
+                <ToggleButton layoutX="1150.0" layoutY="27.0" mnemonicParsing="false" onAction="#telaEdicao" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-editar" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton layoutX="1150.0" layoutY="27.0" mnemonicParsing="false" onAction="#telaExcluir" text="" toggleGroup="$menu">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-excluir" />
+                    </styleClass>
+                </ToggleButton>
+            </children>
+        </HBox>
+        <GridPane fx:id="telaCadastro" hgap="10.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="120.0" prefWidth="130.0" />
+                <ColumnConstraints maxWidth="234.0" minWidth="102.0" prefWidth="180.0" />
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints maxWidth="150.0" minWidth="120.0" prefWidth="120.0" />
+                <ColumnConstraints maxWidth="150.0" minWidth="120.0" prefWidth="120.0" />
+                <ColumnConstraints minWidth="150.0" prefWidth="200.0" />
+                <ColumnConstraints minWidth="150.0" prefWidth="200.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="17.0" prefWidth="250.0" text="N° Empréstimo">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <TextField fx:id="txtNumEmprestimo" prefHeight="35.0" prefWidth="559.0" styleClass="campo" GridPane.rowIndex="1" />
+                <Label layoutX="722.0" layoutY="17.0" prefHeight="17.0" prefWidth="266.0" text="Solicitante" GridPane.columnIndex="1">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <TextField fx:id="txtSolicitante" prefHeight="35.0" styleClass="campo" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+                <Label layoutX="140.0" layoutY="17.0" prefHeight="17.0" prefWidth="266.0" text="Status" GridPane.columnIndex="4">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <ComboBox fx:id="cbStatus" prefHeight="35.0" prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <Label layoutX="153.0" layoutY="17.0" prefHeight="17.0" prefWidth="266.0" text="RG" GridPane.columnIndex="5">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <TextField fx:id="txtRG" layoutX="153.0" layoutY="40.0" prefHeight="35.0" styleClass="campo" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                <Label layoutX="402.0" layoutY="17.0" prefHeight="17.0" prefWidth="266.0" text="CPF" GridPane.columnIndex="6">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <TextField fx:id="txtCPF" layoutX="402.0" layoutY="40.0" prefHeight="35.0" styleClass="campo" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                <Label prefHeight="17.0" prefWidth="236.0" text="Instituição" GridPane.rowIndex="2">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <ComboBox fx:id="cbInstituicao" layoutX="722.0" layoutY="41.0" maxWidth="1.7976931348623157E308" prefHeight="34.0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                <Label layoutX="10.0" layoutY="17.0" prefHeight="17.0" prefWidth="250.0" text="Responsável" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <TextField fx:id="txtResponsavel" styleClass="campo" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Label layoutX="10.0" layoutY="82.0" prefHeight="17.0" prefWidth="236.0" text="Data Empréstimo" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <DatePicker fx:id="dtEmprestimo" editable="false" prefHeight="35.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Label layoutX="390.0" layoutY="82.0" prefHeight="17.0" prefWidth="236.0" text="Data Devolução" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <DatePicker fx:id="dtDevolucao" editable="false" layoutX="402.0" layoutY="109.0" prefHeight="35.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <Label prefHeight="17.0" prefWidth="236.0" text="Contato" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <TextField fx:id="txtContato" layoutX="908.0" layoutY="105.0" prefHeight="35.0" styleClass="campo" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                <Label prefHeight="17.0" prefWidth="236.0" text="E-mail" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                    <styleClass>
+                        <String fx:value="titulo-campos" />
+                        <String fx:value="lb-info-requerido" />
+                    </styleClass>
+                </Label>
+                <TextField fx:id="txtEmail" prefHeight="35.0" styleClass="campo" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                <Label styleClass="lb-info" text="Motivo / Descrição" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                <TextArea fx:id="txtDescricao" wrapText="true" GridPane.columnSpan="7" GridPane.rowIndex="5" />
+            </children>
+        </GridPane>
+        <AnchorPane fx:id="telaEdicao" visible="false" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <TableView fx:id="tbEmprestimo" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+                    <columns>
+                        <TableColumn fx:id="colId" maxWidth="100.0" minWidth="50.0" prefWidth="50.0" text="Id" />
+                        <TableColumn fx:id="colNumEmprestimo" maxWidth="200.0" minWidth="150.0" prefWidth="150.0" text="N° Empréstimo" />
+                        <TableColumn fx:id="colSolicitante" maxWidth="500.0" minWidth="250.0" prefWidth="300.0" text="Solicitante" />
+                        <TableColumn fx:id="colRG" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" text="RG" />
+                        <TableColumn fx:id="colCPF" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" text="CPF" />
+                        <TableColumn fx:id="colStatus" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" text="Status" />
+                        <TableColumn fx:id="colResponsavel" maxWidth="500.0" minWidth="250.0" prefWidth="300.0" text="Responsável" />
+                        <TableColumn fx:id="colInstituicao" maxWidth="400.0" minWidth="250.0" prefWidth="300.0" text="Instituição" />
+                        <TableColumn fx:id="colDataEmprestimo" maxWidth="200.0" minWidth="150.0" prefWidth="150.0" text="Data Empréstimo" />
+                        <TableColumn fx:id="colDataDevolucao" maxWidth="200.0" minWidth="150.0" prefWidth="150.0" text="Data Devolução" />
+                        <TableColumn fx:id="colContato" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Contato" />
+                        <TableColumn fx:id="colEmail" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Email" />
+                        <TableColumn fx:id="colDescricao" maxWidth="-1.0" minWidth="200.0" prefWidth="400.0" text="Descrição" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="50.0" styleClass="box-menus-subtela" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <StackPane AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                    <children>
+                        <Button fx:id="btSalvar" contentDisplay="TOP" mnemonicParsing="false" onAction="#salvar" prefHeight="40.0" prefWidth="200.0" style="" text="Salvar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-salvar" />
+                        <String fx:value="menu-green" />
+                            </styleClass>
+                        </Button>
+                        <Button id="" fx:id="btEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#editar" prefHeight="40.0" prefWidth="200.0" style="" text="Editar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-editar" />
+                        <String fx:value="menu-laranja" />
+                            </styleClass>
+                        </Button>
+                        <Button id="" fx:id="btExcluir" contentDisplay="TOP" mnemonicParsing="false" onAction="#excluir" prefHeight="40.0" prefWidth="200.0" style="" text="Excluir" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <styleClass>
+                                <String fx:value="menus-acoes" />
+                                <String fx:value="acao-excluir" />
+                        <String fx:value="menu-red" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                </StackPane>
+                <Label fx:id="legenda" layoutX="36.0" layoutY="17.0" styleClass="lb-info-requerido" text="Campos obrigatórios" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../css/default.css" />
+        <URL value="@../css/custom.css" />
+    </stylesheets>
+</fx:root>

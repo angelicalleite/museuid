@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+
+<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="60.0" prefWidth="1207.0" styleClass="box-topo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lbTitulo" layoutX="10.0" maxWidth="1.7976931348623157E308" styleClass="titulo" text="Título" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                </Label>
+                <TextField fx:id="txtPesquisar" maxHeight="1.7976931348623157E308" prefHeight="50.0" promptText="Pesquisar" styleClass="pesquisar" HBox.hgrow="ALWAYS" />
+                <ToggleButton mnemonicParsing="false" onAction="#telaPesquisa" text="">
+                    <styleClass>
+                        <String fx:value="menus-tela" />
+                        <String fx:value="menu-info" />
+                    </styleClass>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                    </toggleGroup>
+                </ToggleButton>
+            </children>
+        </HBox>
+        <AnchorPane AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <TableView fx:id="tbCatalogacao" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+                    <columns>
+                        <TableColumn fx:id="colId" maxWidth="-1.0" minWidth="50.0" prefWidth="50.0" text="Id" />
+                        <TableColumn fx:id="colNumeroOrdem" maxWidth="150.0" minWidth="120.0" prefWidth="120.0" text="Número Ordem" />
+                        <TableColumn fx:id="colEtiquetaRFID" maxWidth="200.0" minWidth="100.0" prefWidth="150.0" text="Etiqueta RFID" />
+                        <TableColumn fx:id="colProcedencia" maxWidth="200.0" minWidth="150.0" prefWidth="150.0" text="Procedência" />
+                        <TableColumn fx:id="colDetalheProcedencia" maxWidth="500.0" minWidth="150.0" prefWidth="200.0" text="Detalhe Procedência" />
+                        <TableColumn fx:id="colDimensao" maxWidth="120.0" minWidth="100.0" prefWidth="120.0" text="Dimensões" />
+                        <TableColumn fx:id="colNumeroPartes" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" text="Número de Partes" />
+                        <TableColumn fx:id="colDataEntrada" maxWidth="120.0" minWidth="100.0" prefWidth="120.0" text="Data Entrada" />
+                        <TableColumn fx:id="colDesignacao" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Designação" />
+                        <TableColumn fx:id="colEstratigrafia" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Estratigrafia" />
+                        <TableColumn fx:id="colColecao" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Coleção" />
+                        <TableColumn fx:id="colLocalizacao" maxWidth="-1.0" minWidth="200.0" prefWidth="200.0" text="Localização" />
+                        <TableColumn fx:id="colObservacao" maxWidth="-1.0" minWidth="200.0" prefWidth="300.0" text="Observação" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_RIGHT" prefHeight="50.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+        <AnchorPane prefHeight="50.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <Button fx:id="btDetalhes" contentDisplay="TOP" layoutX="2012.0" layoutY="7.0" mnemonicParsing="false" onAction="#detalhes" prefHeight="40.0" prefWidth="200.0" style="" text="Detalhes" AnchorPane.rightAnchor="0.0">
+                    <styleClass>
+                        <String fx:value="menus-acoes" />
+                        <String fx:value="acao-info" />
+                  <String fx:value="menu-blue" />
+                    </styleClass>
+                </Button>
+                <Label fx:id="legenda" layoutY="9.0" styleClass="legenda" text="Quantidade de catalogações encontrados: 0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../css/default.css" />
+        <URL value="@../css/custom.css" />
+    </stylesheets>
+</fx:root>
