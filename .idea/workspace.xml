@@ -2,13 +2,526 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.23-bin.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/app/App.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/app/Login.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/app/icone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/controle/ConexaoBanco.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/controle/ControleDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/AuditoriaDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/CatalogacaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/ColecaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/DAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/DesignacaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/EmprestimoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/EstratigrafiaDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/ExcursaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/IdentificacaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/InstituicaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/LocalDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/LocalizacaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/LoginDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/MovimentacaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/OrganizacaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/RelatorioDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/SetorDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/UsuarioDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/ValidacaoDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/banco/dao/VisitanteDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/CatalogarController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/CatalogarController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/CatalogarController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/CatalogarController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/CatalogarController$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/CatalogarController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ColecaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/DashController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/DesignacaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/DevolucaoController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/DevolucaoController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/DevolucaoController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/DevolucaoController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/DevolucaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/EmprestimoController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/EmprestimoController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/EmprestimoController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/EmprestimoController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/EmprestimoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/EstratigrafiaController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ExcursaoController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ExcursaoController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ExcursaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/HistoricoController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/HistoricoController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/HistoricoController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/HistoricoController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/HistoricoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/IdentificacaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/InstituicaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ItensController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ItensController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ItensController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ItensController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ItensController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/LocalizacaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/MovimentacaoController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/MovimentacaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/OrganizacaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/PesquisarController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/PesquisarController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/PesquisarController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/PesquisarController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/RelatorioController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/RelatorioController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/RelatorioController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/SetorController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/SetorController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/UsuarioController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/UsuarioController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/UsuarioController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/ValidacaoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/VisitanteController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/controller/VisitanteController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/css/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/css/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/css/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/css/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/font/OpenSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/font/OpenSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/font/OpenSans-Semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/alert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/confirmar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/erro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/nota-alerta.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/nota-bell.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/nota-confirma.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/nota-erro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/dialog/nota-info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/acessar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/add-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/add-item-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/add-item-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/add-item.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/atualizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/catalogar-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/catalogar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/catalogar-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/catalogar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/colecao-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/colecao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/dados.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/deletar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/deletar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/designacao-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/designacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/detalhes-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/detalhes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/devolucao-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/devolucao-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/devolucao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/editar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/editar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/emprestimo-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/emprestimo-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/emprestimo-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/emprestimo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/estratigrafia-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/estratigrafia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/excluir.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/fechar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/finalizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/geopark-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/historico-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/historico-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/historico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id-catalogacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id-colecao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id-designacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id-emprestimo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id-estratigrafia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id-localizacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/id.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/info-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/info-g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/iniciar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/invalidados.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/key.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/localizacao-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/localizacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/localizar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/localizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/logo-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/menu-ative.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/menu-ative2 (1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/menu-ative2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/menu-inativo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/menu-inativo2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/minimizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/movi-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/movi-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/movi-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/movi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/obrigatorio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/pesquisa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/pesquisar-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/pesquisar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/relatorio-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/relatorio-contente.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/relatorio-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/relatorio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/sair.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/salvar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/submenu-ative.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/submenu-inativo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/total.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/user-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/util-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/util.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/valida-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/valida-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/valida-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/valida.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/validados.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/visitas-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/icon/visitas-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/login.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/login2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/logo-app.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Auditoria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Catalogacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Colecao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Designacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Emprestimo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/EmprestimoItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Estratigrafia.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Excursao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Guias.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Identificacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Instituicao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Local.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Localizacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Movimentacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Organizacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Relatorio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Setor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/TipoUsuario.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Usuario.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Validacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/ValidacaoItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/model/Visitante.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Animacao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Campo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Combo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Consultas.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Criptografia.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Dialogo$Dialog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Dialogo$Resposta.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Dialogo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Filtro$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Filtro.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/GraficoArea.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/GraficoBar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/GraficoLine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/GraficoPie$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/GraficoPie$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/GraficoPie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Grupo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Link.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Mascara.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Mensagem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Modulo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Nota.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Relatorios.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Resize.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Tempo$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Tempo$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/util/Tempo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/app/AppController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/app/app.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/catalogar.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/colecao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/dash.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/designacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/devolucao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/emprestimo.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/estratigrafia.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/excursao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/historico.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/identificacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/instituicao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/itens.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/local.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/localizacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/login/LoginController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/login/login.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/movimentacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/organizacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/pesquisar.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/relatorio.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/setor.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/usuario.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/validacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MuseuID/br/com/museuid/view/visitante.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/app/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/app/Login.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/app/icone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/controle/ConexaoBanco.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/controle/ControleDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/AuditoriaDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/CatalogacaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/ColecaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/DAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/DesignacaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/EmprestimoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/EstratigrafiaDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/ExcursaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/IdentificacaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/InstituicaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/LocalDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/LocalizacaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/LoginDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/MovimentacaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/OrganizacaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/RelatorioDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/SetorDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/UsuarioDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/ValidacaoDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/banco/dao/VisitanteDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/CatalogarController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/ColecaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/DashController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/DesignacaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/DevolucaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/EmprestimoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/EstratigrafiaController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/ExcursaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/HistoricoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/IdentificacaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/InstituicaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/ItensController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/LocalController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/LocalizacaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/MovimentacaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/OrganizacaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/PesquisarController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/RelatorioController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/SetorController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/UsuarioController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/ValidacaoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/controller/VisitanteController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/css/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/css/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/css/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/css/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/font/OpenSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/font/OpenSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/font/OpenSans-Semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/alert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/confirmar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/erro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/nota-alerta.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/nota-bell.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/nota-confirma.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/nota-erro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/dialog/nota-info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/acessar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/add-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/add-item-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/add-item-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/add-item.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/atualizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/catalogar-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/catalogar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/catalogar-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/catalogar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/colecao-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/colecao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/dados.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/deletar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/deletar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/designacao-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/designacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/detalhes-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/detalhes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/devolucao-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/devolucao-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/devolucao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/editar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/editar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/emprestimo-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/emprestimo-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/emprestimo-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/emprestimo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/estratigrafia-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/estratigrafia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/excluir.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/fechar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/finalizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/geopark-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/historico-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/historico-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/historico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id-catalogacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id-colecao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id-designacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id-emprestimo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id-estratigrafia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id-localizacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/id.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/info-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/info-g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/iniciar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/invalidados.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/key.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/localizacao-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/localizacao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/localizar-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/localizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/logo-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/menu-ative.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/menu-ative2 (1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/menu-ative2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/menu-inativo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/menu-inativo2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/minimizar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/movi-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/movi-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/movi-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/movi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/obrigatorio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/pesquisa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/pesquisar-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/pesquisar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/relatorio-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/relatorio-contente.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/relatorio-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/relatorio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/sair.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/salvar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/submenu-ative.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/submenu-inativo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/total.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/user-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/util-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/util.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/valida-b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/valida-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/valida-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/valida.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/validados.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/visitas-h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/icon/visitas-m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/login.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/login2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/logo-app.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Auditoria.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Catalogacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Colecao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Designacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Emprestimo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/EmprestimoItem.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Estratigrafia.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Excursao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Guias.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Identificacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Instituicao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Local.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Localizacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Movimentacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Organizacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Relatorio.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Setor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/TipoUsuario.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Usuario.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Validacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/ValidacaoItem.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/model/Visitante.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Animacao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Campo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Combo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Consultas.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Criptografia.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Dialogo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Filtro.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/GraficoArea.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/GraficoBar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/GraficoLine.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/GraficoPie.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Grupo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Link.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Mascara.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Mensagem.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Modulo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Nota.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Relatorios.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Resize.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/util/Tempo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/app/AppController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/app/app.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/catalogar.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/colecao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/dash.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/designacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/devolucao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/emprestimo.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/estratigrafia.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/excursao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/historico.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/identificacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/instituicao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/itens.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/local.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/localizacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/login/LoginController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/login/login.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/movimentacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/organizacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/pesquisar.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/relatorio.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/setor.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/usuario.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/validacao.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/br/com/museuid/view/visitante.fxml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MuseuID.iml" afterPath="$PROJECT_DIR$/MuseuID.iml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,86 +593,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/museuid/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="613" column="21" selection-start-line="613" selection-start-column="21" selection-end-line="613" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuditoriaDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/AuditoriaDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#431#432#0" expanded="false" />
-                <element signature="e#454#455#0" expanded="false" />
-                <marker date="1450033382670" expanded="true" signature="607:687" placeholder="INSERT INTO tb_auditoria..." />
-                <marker date="1450033382670" expanded="true" signature="1294:1341" placeholder="DELETE FROM ..." />
-                <marker date="1450033382670" expanded="true" signature="1822:2032" placeholder="SELECT log.i..tb_auditoria..." />
-                <marker date="1450033382670" expanded="true" signature="2838:3026" placeholder="SELECT log.i..tb_auditoria..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VisitanteDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/VisitanteDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="123" column="6" selection-start-line="123" selection-start-column="6" selection-end-line="123" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#387#388#0" expanded="false" />
-                <element signature="e#410#411#0" expanded="false" />
-                <marker date="1433113601225" expanded="true" signature="558:682" placeholder="INSERT INTO tb_visitantes..." />
-                <marker date="1433113601225" expanded="true" signature="1534:1660" placeholder="UPDATE tb_vi..." />
-                <marker date="1433113601225" expanded="true" signature="2548:2594" placeholder="DELETE FROM ..." />
-                <marker date="1433113601225" expanded="true" signature="3085:3126" placeholder="SELECT tb_vi..tb_visitantes..." />
-                <marker date="1433113601225" expanded="true" signature="3843:3888" placeholder="SELECT count..tb_visitantes..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EstratigrafiaDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/EstratigrafiaDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#368#369#0" expanded="false" />
-                <element signature="e#391#392#0" expanded="false" />
-                <marker date="1450555297018" expanded="true" signature="551:625" placeholder="INSERT INTO tb_estratigrafia..." />
-                <marker date="1450555297018" expanded="true" signature="1220:1305" placeholder="UPDATE tb_es..." />
-                <marker date="1450555297018" expanded="true" signature="1938:1993" placeholder="DELETE FROM ..." />
-                <marker date="1450555297018" expanded="true" signature="2520:2550" placeholder="SELECT * FRO..tb_estratigrafia..." />
-                <marker date="1450555297018" expanded="true" signature="3374:3447" placeholder="SELECT id_es..tb_estratigrafia..." />
-                <marker date="1450555297018" expanded="true" signature="4153:4234" placeholder="SELECT forma..tb_estratigrafia..." />
-                <marker date="1450555297018" expanded="true" signature="4913:4950" placeholder="SELECT COUNT..tb_estratigrafia..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.089788735">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -178,12 +612,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/OrganizacaoController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/PesquisarController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/RelatorioController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/SetorController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/UsuarioController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/ValidacaoController.java" />
         <option value="$PROJECT_DIR$/src/br/com/museuid/controller/VisitanteController.java" />
         <option value="$PROJECT_DIR$/src/br/com/museuid/css/login.css" />
         <option value="$PROJECT_DIR$/src/br/com/museuid/view/app/App.java" />
@@ -229,6 +657,12 @@
         <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/AuditoriaDAO.java" />
         <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/EstratigrafiaDAO.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelInterface.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Auditoria.java" />
       </list>
     </option>
   </component>
@@ -240,22 +674,52 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="JavaFX Example Maven Project" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="JavaFX Example Maven Project" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="267" />
+    <option name="y" value="152" />
     <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="height" value="845" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -867,28 +1331,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MuseuID" />
+              <option name="myItemId" value="museuid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MuseuID" />
+              <option name="myItemId" value="museuid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MuseuID" />
+              <option name="myItemId" value="museuid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -903,6 +1366,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -922,13 +1386,17 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.29060665" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid" />
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Angelica\Documents\Intellij\MuseuID\src\br\com\museuid\view\login" />
       <recent name="C:\Users\Angelica\Documents\Intellij\MuseuID\src\br\com\museuid\view\app" />
@@ -945,31 +1413,21 @@
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -979,27 +1437,15 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -1026,133 +1472,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1167,16 +1486,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1242,9 +1551,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -1258,18 +1564,46 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -1328,27 +1662,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
     <configuration default="false" name="Main" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1384,7 +1697,9 @@
       <projects_view />
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER" />
   </component>
@@ -1396,6 +1711,7 @@
       <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
       <created>1359379246138</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1432866173002" duration="6598000" />
@@ -1469,23 +1785,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="267" y="152" width="1382" height="845" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34170854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2185501" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22087745" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41629955" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.359944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18496802" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1716418" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102878466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1493,11 +1812,10 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25330397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281075" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1558,513 +1876,111 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Filtro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/GraficoArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/GraficoLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/GraficoPie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Grupo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Consultas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Link.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Mascara.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Mensagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Modulo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Nota.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Relatorios.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Resize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Tempo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="73" selection-start-line="139" selection-start-column="73" selection-end-line="139" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Auditoria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Catalogacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Colecao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Designacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Emprestimo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="163" selection-start-line="27" selection-start-column="163" selection-end-line="27" selection-end-column="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/EmprestimoItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Estratigrafia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Excursao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Guias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/ColecaoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2996595">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Identificacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03859251">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Instituicao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Local.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035187285">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Localizacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03859251">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Movimentacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Animacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15437004">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/GraficoBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/controle/ConexaoBanco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/view/app/AppController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/VisitanteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/PesquisarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_catalogacao">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/CatalogacaoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63349915">
-          <caret line="462" column="32" selection-start-line="462" selection-start-column="30" selection-end-line="462" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/DashController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="246" column="58" selection-start-line="246" selection-start-column="58" selection-end-line="246" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_instituicao">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_excursao">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/app/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Mascara.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Mensagem.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Modulo.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Nota.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Relatorios.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Resize.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Tempo.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Auditoria.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Catalogacao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Colecao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Designacao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Emprestimo.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/EmprestimoItem.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Estratigrafia.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Excursao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Guias.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/ColecaoController.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Identificacao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Instituicao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Local.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Localizacao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Movimentacao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Animacao.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/GraficoBar.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/DAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/controle/ConexaoBanco.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/view/app/AppController.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/app/App.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/VisitanteController.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/PesquisarController.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/css/app.css" />
+    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_catalogacao" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/CatalogacaoDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/DashController.java" />
+    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_instituicao" />
+    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_excursao" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/app/Login.java" />
     <entry file="file://$PROJECT_DIR$/MuseuID.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/a86ff6be-bc35-4976-881c-7e98e087cdff">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>a86ff6be-bc35-4976-881c-7e98e087cdff</OriginalElement>
-          <nodes>
-            <node x="792.05" y="1065.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_localizacao</node>
-            <node x="1091.0" y="1217.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_auditoria</node>
-            <node x="1242.0" y="1054.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_emprestimo_item</node>
-            <node x="310.5" y="421.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_estratigrafia</node>
-            <node x="113.26666666666665" y="1054.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_validacao_item</node>
-            <node x="400.0" y="1217.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_visitantes</node>
-            <node x="1018.5" y="765.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_local</node>
-            <node x="925.0" y="0.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_organizacao</node>
-            <node x="0.0" y="710.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_validacao</node>
-            <node x="0.0" y="1217.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_excursao</node>
-            <node x="5.5" y="366.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_usuario</node>
-            <node x="829.5" y="432.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_colecao</node>
-            <node x="1284.0" y="377.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_instituicao</node>
-            <node x="1016.5" y="421.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_setor</node>
-            <node x="738.0" y="1217.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_movimentacao</node>
-            <node x="455.54999999999995" y="644.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_catalogacao</node>
-            <node x="1208.5" y="644.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_emprestimo</node>
-            <node x="543.5" y="388.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_designacao</node>
-            <node x="62.0" y="121.0">a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_tipo_usuario</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_emprestimo" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_instituicao">
-              <point x="0.0" y="-180.0" />
-              <point x="0.0" y="103.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_localizacao" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_local">
-              <point x="46.0" y="-48.0" />
-              <point x="930.05" y="1034.0" />
-              <point x="1103.5" y="1034.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_emprestimo_item" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_emprestimo">
-              <point x="61.0" y="-59.0" />
-              <point x="0.0" y="180.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_catalogacao" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_estratigrafia">
-              <point x="-143.33333333333337" y="-180.0" />
-              <point x="527.2166666666666" y="619.0" />
-              <point x="417.0" y="619.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_setor" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_organizacao">
-              <point x="0.0" y="-59.0" />
-              <point x="0.0" y="158.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_catalogacao" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_colecao">
-              <point x="143.33333333333337" y="-180.0" />
-              <point x="813.8833333333333" y="619.0" />
-              <point x="913.0" y="619.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_localizacao" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_catalogacao">
-              <point x="-46.0" y="-48.0" />
-              <point x="838.05" y="1034.0" />
-              <point x="670.55" y="1034.0" />
-              <point x="0.0" y="180.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_validacao_item" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_catalogacao">
-              <point x="56.75" y="-59.0" />
-              <point x="283.51666666666665" y="1034.0" />
-              <point x="527.2166666666666" y="1034.0" />
-              <point x="-143.33333333333337" y="180.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_validacao" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_usuario">
-              <point x="0.0" y="-114.0" />
-              <point x="0.0" y="114.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_local" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_setor">
-              <point x="0.0" y="-59.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_emprestimo_item" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_catalogacao">
-              <point x="-61.0" y="-59.0" />
-              <point x="1303.0" y="1024.0" />
-              <point x="813.8833333333333" y="1024.0" />
-              <point x="143.33333333333337" y="180.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_catalogacao" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_designacao">
-              <point x="0.0" y="-180.0" />
-              <point x="670.55" y="619.0" />
-              <point x="676.5" y="619.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_usuario" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_tipo_usuario">
-              <point x="0.0" y="-114.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_validacao_item" target="a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_validacao">
-              <point x="-56.75" y="-59.0" />
-              <point x="170.01666666666665" y="1034.0" />
-              <point x="148.0" y="1034.0" />
-              <point x="0.0" y="114.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.5571521881123449" x="1614.0" y="1088.0" />
-          <SelectedNodes>
-            <node>a86ff6be-bc35-4976-881c-7e98e087cdff.TABLE:museuid.tb_tipo_usuario</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/css/custom.css">
+    <entry file="uml://DATABASE/a86ff6be-bc35-4976-881c-7e98e087cdff" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/css/custom.css" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/AuditoriaDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/VisitanteDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/EstratigrafiaDAO.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="613" column="21" selection-start-line="613" selection-start-column="21" selection-end-line="613" selection-end-column="21" />
+        <state relative-caret-position="383">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/AuditoriaDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#431#432#0" expanded="false" />
-            <element signature="e#454#455#0" expanded="false" />
-            <marker date="1450033382670" expanded="true" signature="607:687" placeholder="INSERT INTO tb_auditoria..." />
-            <marker date="1450033382670" expanded="true" signature="1294:1341" placeholder="DELETE FROM ..." />
-            <marker date="1450033382670" expanded="true" signature="1822:2032" placeholder="SELECT log.i..tb_auditoria..." />
-            <marker date="1450033382670" expanded="true" signature="2838:3026" placeholder="SELECT log.i..tb_auditoria..." />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/VisitanteDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="6" selection-start-line="123" selection-start-column="6" selection-end-line="123" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#387#388#0" expanded="false" />
-            <element signature="e#410#411#0" expanded="false" />
-            <marker date="1433113601225" expanded="true" signature="558:682" placeholder="INSERT INTO tb_visitantes..." />
-            <marker date="1433113601225" expanded="true" signature="1534:1660" placeholder="UPDATE tb_vi..." />
-            <marker date="1433113601225" expanded="true" signature="2548:2594" placeholder="DELETE FROM ..." />
-            <marker date="1433113601225" expanded="true" signature="3085:3126" placeholder="SELECT tb_vi..tb_visitantes..." />
-            <marker date="1433113601225" expanded="true" signature="3843:3888" placeholder="SELECT count..tb_visitantes..." />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/EstratigrafiaDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelSessionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#391#392#0" expanded="false" />
-            <marker date="1450555297018" expanded="true" signature="551:625" placeholder="INSERT INTO tb_estratigrafia..." />
-            <marker date="1450555297018" expanded="true" signature="1220:1305" placeholder="UPDATE tb_es..." />
-            <marker date="1450555297018" expanded="true" signature="1938:1993" placeholder="DELETE FROM ..." />
-            <marker date="1450555297018" expanded="true" signature="2520:2550" placeholder="SELECT * FRO..tb_estratigrafia..." />
-            <marker date="1450555297018" expanded="true" signature="3374:3447" placeholder="SELECT id_es..tb_estratigrafia..." />
-            <marker date="1450555297018" expanded="true" signature="4153:4234" placeholder="SELECT forma..tb_estratigrafia..." />
-            <marker date="1450555297018" expanded="true" signature="4913:4950" placeholder="SELECT COUNT..tb_estratigrafia..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.089788735">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Auditoria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding />
         </state>
       </provider>

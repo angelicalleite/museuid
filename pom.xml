@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.museuid</groupId>
+    <artifactId>museuid-maven</artifactId>
+    <name>JavaFX Example Maven Project</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <url>https://github.com/Heverton7</url>
+
+    <organization>
+        <name>Zen Java</name>
+    </organization>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>8.5.0</version>
+                <configuration>
+                    <!-- executable JAR file is built by default (not optional at this stage) -->
+                    <!-- manifest mvn jfx:jar <mainClass>br.com.museuid.app.Login</mainClass> -->
+                    <!-- optionally sign the jar file if security is needed -->
+                    <!-- to create keystore use command line:       keytool -genkey -alias example-user -keystore keystore.jks -->
+                    <keyStore>keystore</keyStore>
+                    <keyStoreAlias>example-user</keyStoreAlias>
+                    <keyPassword>example-password</keyPassword>
+                    <!-- optionally directory contain deployment-->
+                    <!-- http://javafx-maven-plugin.github.io/ -->
+                    <css2bin>true</css2bin>
+                    <!-- optionally allpermissions -->
+                    <verbose>true</verbose>
+                    <allPermissions>true</allPermissions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <dependencies>
+        <!-- Apache Commons manifest -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <!-- Logging  -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+        <!-- Test jUnit  -->
+        <dependency>
+            <groupId>de.saxsys</groupId>
+            <artifactId>jfx-testrunner</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- database -->
+        <!-- https://mvnrepository.com/artifact/org.hsqldb/sqltool -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>sqltool</artifactId>
+            <version>${hsqldb.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hsqldb/hsqldb -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>${hsqldb.version}</version>
+        </dependency>
+        <!-- hibernate jpa -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.2.2.Final</version>
+        </dependency>
+        <!-- For connection pooling -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>5.2.2.Final</version>
+        </dependency>
+        <!-- connection pool
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP-java6</artifactId>
+            <version>${hikaricp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-hikaricp</artifactId>
+            <version>${hibernate.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>HikariCP</artifactId>
+                    <groupId>com.zaxxer</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        -->
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <slf4j.version>1.6.1</slf4j.version>
+        <hibernate.version>5.2.2.Final</hibernate.version>
+        <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+        <hikaricp.version>2.3.13</hikaricp.version>
+        <hsqldb.version>2.3.4</hsqldb.version>
+    </properties>
+
+</project>
