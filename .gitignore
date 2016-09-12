@@ -48,5 +48,3 @@ crashlytics-build.properties
 fabric.properties
 
 target/
-src/main/
-src/test/

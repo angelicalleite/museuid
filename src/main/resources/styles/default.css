@@ -1,0 +1,1009 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+/*............. TextField .............*/
+
+.text-field {
+    -fx-background-color: #fff;
+    -fx-border-color: #eaeaea;
+    -fx-text-fill: #7a7a7a;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-highlight-fill: #ebebcc;
+    -fx-highlight-text-fill: #000000;
+}
+
+.text-field:focused {
+    -fx-border-color: #7acff5;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+}
+
+/*............. TextArea .............*/
+
+.text-area {
+    -fx-background-color: #fff;
+    -fx-text-fill: #7a7a7a;
+    -fx-cursor: default;
+    -fx-padding: 0;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-font-size: 13px;
+    -fx-highlight-fill: #ebebcc;
+    -fx-highlight-text-fill: #000000;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+}
+
+.text-area .content {
+    -fx-background-color: #fff;
+    -fx-border-color: transparent;
+}
+
+.text-area:focused .scroll-pane {
+    -fx-background-color: #fff;
+    -fx-border-color: #7acff5;
+}
+
+.text-area > *.scroll-pane {
+    -fx-background-color: #fff;
+    -fx-border-color: #eaeaea;
+    -fx-border-radius: 4;
+}
+
+.text-area > *.scroll-pane > *.scroll-bar:vertical {
+    -fx-background-color: #fff;
+    -fx-background-insets: 5;
+    -fx-padding: 0;
+    -fx-pref-width: 10;
+}
+
+.text-area > *.scroll-pane > *.scroll-bar:vertical > *.thumb {
+    -fx-background-color: #cecece;
+    -fx-cursor: hand;
+    -fx-border-radius: 0;
+    -fx-background-radius: 2;
+}
+
+.text-area > *.scroll-pane > *.scroll-bar > *.decrement-button > *.decrement-arrow,
+.text-area > *.scroll-pane > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+
+/*............. ToolTip .............*/
+.tooltip {
+    -fx-background: rgba(75, 75, 75, 1);
+    -fx-background-color: rgba(75, 75, 75, 1);
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0;
+    -fx-padding: 0.667em 0.75em 0.667em 0.75em;
+    -fx-effect: dropshadow(three-pass-box, rgba(72, 72, 72, 0.4), 4, 0.0, 0, 2);
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+}
+
+/*............. ComboBox .............*/
+
+.combo-box-base {
+    -fx-background-color: transparent, transparent, #eaeaea, #fff;
+    -fx-background-insets: 0px 0px 0px 0px, 0px, 0px, 1px;
+    -fx-background-radius: 4px, 4px, 4px, 4px;
+    -fx-text-fill: #414141;
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-padding: 0px;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: transparent, #7acff5, transparent, #fff;
+    -fx-text-fill: #414141;
+}
+
+.combo-box > *.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: #838383;
+    -fx-background-insets: 0;
+}
+
+/*.............List View Combo Box .............*/
+
+.combo-box-popup > .list-view {
+    -fx-background-color: #e0e0e0, #eaeaea, #fff;
+    -fx-background-insets: 0, 1;
+    -fx-effect: null;
+    -fx-text-fill: #838383;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-padding: 4 0 4 5;
+    -fx-background: -fx-control-inner-background;
+    -fx-text-fill: #6f6f6f;
+    -fx-border-color: transparent;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover {
+    -fx-padding: 4 0 4 5;
+    -fx-background: -fx-selection-bar-non-focused;
+    -fx-background-color: #eaeaea;
+    -fx-border-color: #e3e3e3 transparent;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover {
+    -fx-padding: 4 0 4 5;
+    -fx-text-fill: #262626;
+    -fx-background-color: #fbfbfb;
+    -fx-border-color: #fbfbfb transparent;
+}
+
+.combo-box-popup > .list-view > .placeholder > .label {
+    -fx-text-fill: derive(-fx-control-inner-background, -80%);
+}
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar:vertical {
+    -fx-background-color: #fff;
+    -fx-background-insets: 5;
+    -fx-padding: 0;
+    -fx-pref-width: 10;
+}
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar:vertical > *.thumb {
+    -fx-background-color: #cecece;
+    -fx-cursor: hand;
+    -fx-border-radius: 0;
+    -fx-background-radius: 2;
+}
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar > *.decrement-button > *.decrement-arrow,
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+
+/*............. Scroll tabela .............*/
+
+.table-view > *.virtual-flow > *.scroll-bar:vertical {
+    -fx-background-insets: 0px, 0px 0px 0px 1px;
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+}
+
+.table-view > *.virtual-flow > *.scroll-bar:horizontal {
+    -fx-background-insets: 0px, 0px 0px 0px 1px;
+    -fx-padding: 0px;
+}
+
+/*............. Table Cells .............*/
+
+.check-box-table-cell {
+    -fx-alignment: center;
+    -fx-padding: 0;
+}
+
+.check-box-table-cell > .check-box {
+    -fx-font-size: 0.8em;
+    -fx-opacity: 1;
+    -fx-padding: 0 0 1 0;
+}
+
+.check-box-table-cell > .check-box > .box {
+    -fx-background-color: -fx-outer-border, -fx-background;
+    -fx-background-insets: 0, 1;
+}
+
+.check-box-table-cell > .check-box:selected > .box > .mark {
+    -fx-background-color: -fx-text-background-color !important;
+    -fx-background-insets: 0;
+}
+
+/*............. Data Picker .............*/
+
+.date-picker > *.arrow-button {
+    -fx-background-color: transparent, #f4f4f4;
+    -fx-background-insets: 1px 1px 1px -1px;
+}
+
+.date-picker > *.arrow-button > *.arrow {
+    -fx-background-color: transparent, #383838;
+    -fx-background-insets: 1px 0px -1px 0px, 0px;
+    -fx-padding: 0.416667em 0.416667em 0.333333em 0.333333em;
+    -fx-scale-shape: true;
+}
+
+.date-picker > *.text-field {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0 3 2 0;
+    -fx-border-radius: 3 0 0 3;
+    -fx-border-color: #eaeaea;
+}
+
+.date-picker > *.text-field:focused {
+    -fx-border-color: #7acff5;
+}
+
+/*............. List View .............*/
+
+.list-view {
+    -fx-background-color: #eaeaea, -fx-control-inner-background;
+    -fx-background-insets: 0px, 1px;
+    -fx-padding: 1px;
+}
+
+.list-view > *.virtual-flow > *.scroll-bar:vertical {
+    -fx-background-insets: 0px, 0px 0px 0px 1px;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-background-color: #fff;
+}
+
+.list-view > *.virtual-flow > *.corner {
+    -fx-background-color: #fff;
+}
+
+/*............. Context Menu PopupMenu .............*/
+
+.context-menu > .separator {
+    -fx-padding: 4;
+}
+
+.context-menu > .scroll-arrow {
+    -fx-padding: 5;
+    -fx-background-color: transparent;
+}
+
+.context-menu > .scroll-arrow:hover {
+    -fx-background-color: red;
+    -fx-text-fill: #fff;
+}
+
+.context-menu:show-mnemonics > .mnemonic-underline {
+    -fx-stroke: -fx-text-fill;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #fff;
+    -fx-border-color: #f0f0f0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-padding: 0 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0), 5, 0.0, 3, 3);
+}
+
+/*............. Separator .............*/
+
+.separator:horizontal .line {
+    -fx-border-color: #f0f0f0 transparent transparent, transparent;
+    -fx-border-insets: 0;
+}
+
+/*............. Grafico Linha .............*/
+
+.chart-line-symbol.default-color0 {
+    -fx-background-color: #fff500, #fff;
+}
+
+.chart-series-line.default-color0 {
+    -fx-stroke: #fff500;
+}
+
+.chart-line-symbol {
+    -fx-background-insets: 0px, 1px;
+    -fx-background-radius: 25px;
+    -fx-padding: 5px;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke-dash-array: 0.25em;
+    -fx-base: #fff;
+    -fx-stroke: #efefef;
+}
+
+/*............. Eixo Y graficos .............*/
+
+.chart-content {
+    -fx-padding: 10 0;
+}
+
+.axis {
+    AXIS_COLOR: #f7f7f7;
+    -fx-tick-label-font-size: 0.85em;
+    -fx-tick-length: 10px;
+    -fx-tick-label-fill: #535353;
+    -fx-tick-label-gap: 5;
+}
+
+.axis:left {
+    -fx-border-color: transparent #f7f7f7 transparent transparent;
+}
+
+.axis:bottom {
+    -fx-border-color: #f7f7f7 transparent transparent transparent;
+}
+
+.axis:left > *.axis-label {
+    -fx-padding: 0px 0px 4px 0px;
+}
+
+/*............. Combo Data .............*/
+
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.416667em 0.416667em 0.333333em 0.333333em;
+    -fx-scale-shape: true;
+}
+
+.date-picker-popup {
+    -fx-background-color: #d6d6ce;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 0;
+    -fx-alignment: CENTER;
+    -fx-spacing: 0;
+    -fx-padding: 0.083333em;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 3, 0.0, 2, 2);
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-padding: 0.588883em 0.5em 0.666667em 0.5em;
+    -fx-background-color: #f4f4f4;
+    -fx-background-insets: 0 0 0 0, 0 0 1 0;
+}
+
+.date-picker-popup > * > .spinner {
+    -fx-spacing: 0.25em;
+    -fx-alignment: CENTER;
+    -fx-fill-height: false;
+}
+
+.date-picker-popup > * > .spinner > .button {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0, 1, 2;
+    -fx-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.date-picker-popup > * > .spinner > .button:focused {
+    -fx-background-color: transparent;
+    -fx-color: -fx-hover-base;
+    -fx-background-insets: -0.2, 1, 2, -1.4, 2.6;
+}
+
+.date-picker-popup > * > .spinner > .button:hover {
+    -fx-color: transparent;
+}
+
+.date-picker-popup > * > .spinner > .button:armed {
+    -fx-color: black;
+}
+
+.date-picker-popup > * > .spinner > .left-button {
+    -fx-padding: 0 0.333333em 0 0.25em;
+}
+
+.date-picker-popup > * > .spinner > .right-button {
+    -fx-padding: 0 0.25em 0 0.333333em;
+}
+
+.date-picker-popup > * > .spinner > .button > .left-arrow,
+.date-picker-popup > * > .spinner > .button > .right-arrow {
+    -fx-background-color: transparent, #b2b2b2;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.166667em 0.333333em 0.166667em;
+    -fx-effect: null;
+}
+
+.date-picker-popup > * > .spinner > .button:hover > .left-arrow,
+.date-picker-popup > * > .spinner > .button:hover > .right-arrow {
+    -fx-background-color: black, transparent;
+}
+
+.date-picker-popup > * > .spinner > .button:pressed > .left-arrow,
+.date-picker-popup > * > .spinner > .button:pressed > .right-arrow {
+    -fx-background-color: -fx-mark-highlight-color, derive(-fx-base, -55%);
+}
+
+.date-picker-popup > * > .spinner > .button > .left-arrow {
+    -fx-padding: 0.333333em 0.25em 0.333333em 0.166667em;
+    -fx-shape: "M5.997,5.072L5.995,6.501l-2.998-4l2.998-4l0.002,1.43l-1.976,2.57L5.997,5.072z";
+    -fx-scale-shape: true;
+}
+
+.date-picker-popup > * > .spinner > .button > .right-arrow {
+    -fx-padding: 0.333333em 0.25em 0.333333em 0.166667em;
+    -fx-shape: "M2.998-0.07L3-1.499l2.998,4L3,6.501l-0.002-1.43l1.976-2.57L2.998-0.07z";
+    -fx-scale-shape: true;
+}
+
+.date-picker-popup > * > .spinner > .label {
+    -fx-alignment: CENTER;
+}
+
+.date-picker-popup > .month-year-pane > .secondary-label {
+    -fx-alignment: BASELINE_CENTER;
+    -fx-padding: 0.5em 0 0 0;
+    -fx-text-fill: #f3622d;
+}
+
+.date-picker-popup > .calendar-grid {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .date-cell {
+    -fx-background-color: transparent;
+    -fx-background-insets: 1, 2;
+    -fx-padding: 0;
+    -fx-alignment: BASELINE_CENTER;
+    -fx-opacity: 1.0;
+}
+
+.date-picker-popup > * > .day-name-cell,
+.date-picker-popup > * > .week-number-cell {
+    -fx-font-size: 0.916667em;
+}
+
+.date-picker-popup > * > .week-number-cell {
+    -fx-padding: 0.333333em 0.583333em 0.333333em 0.583333em;
+    -fx-border-color: -fx-control-inner-background;
+    -fx-border-width: 1px;
+    -fx-background: -fx-control-inner-background;
+    -fx-background-color: -fx-background;
+    -fx-text-fill: -fx-accent;
+}
+
+.date-picker-popup > * > .day-cell {
+    -fx-padding: 0.333333em 0.583333em 0.333333em 0.583333em;
+    -fx-border-color: derive(-fx-selection-bar-non-focused, 60%);
+    -fx-border-width: 1px;
+    -fx-font-size: 1em;
+    -fx-background: -fx-control-inner-background;
+    -fx-background-color: -fx-background;
+    -fx-text-fill: #626262;
+}
+
+.date-picker-popup > * > .hijrah-day-cell {
+    -fx-alignment: TOP_LEFT;
+    -fx-padding: 0.083333em 0.333333em 0.083333em 0.333333em;
+    -fx-cell-size: 2.75em;
+}
+
+.date-picker-popup > * > .day-cell > .secondary-text {
+    -fx-fill: #f3622d;
+}
+
+.date-picker-popup > * > .today {
+    -fx-background-color: -fx-control-inner-background, derive(-fx-selection-bar-non-focused, -20%), -fx-control-inner-background;
+    -fx-background-insets: 1, 2, 3;
+    -fx-background-color: -fx-selection-bar, #7acff5, #7acff5;
+}
+
+.date-picker-popup > * > .day-cell:hover,
+.date-picker-popup > * > .selected,
+.date-picker-popup > * > .previous-month.selected,
+.date-picker-popup > * > .next-month.selected {
+    -fx-background-color: -fx-selection-bar, #7acff5, #7acff5;
+    -fx-text-fill: #343434;
+    -fx-background-insets: 0;
+    -fx-font-family: 'Open Sans Semibold', sans-serif;
+}
+
+.date-picker-popup > * > .today:hover,
+.date-picker-popup > * > .today.selected {
+    -fx-background-color: -fx-selection-bar, derive(-fx-selection-bar-non-focused, -20%), -fx-selection-bar;
+}
+
+.date-picker-popup > * > .day-cell:focused,
+.date-picker-popup > * > .today:focused {
+    -fx-background-color: -fx-control-inner-background, -fx-cell-focus-inner-border, -fx-control-inner-background;
+    -fx-background-insets: 1, 2, 3;
+}
+
+.date-picker-popup > * > .day-cell:focused:hover,
+.date-picker-popup > * > .today:focused:hover,
+.date-picker-popup > * > .selected:focused,
+.date-picker-popup > * > .today.selected:focused {
+    -fx-background-color: -fx-selection-bar, #7acff5, #7acff5;
+}
+
+.date-picker-popup > * > .previous-month,
+.date-picker-popup > * > .next-month {
+    -fx-background: #fbfbfb;
+    -fx-font-family: 'Open Sans Semibold', sans-serif;
+}
+
+.date-picker-popup > * > .previous-month:hover,
+.date-picker-popup > * > .next-month:hover {
+    -fx-background: #eaeaea;
+    -fx-font-family: 'Open Sans Semibold', sans-serif;
+}
+
+.date-picker-popup > * > .day-cell:hover > .secondary-text,
+.date-picker-popup > * > .previous-month > .secondary-text,
+.date-picker-popup > * > .next-month > .secondary-text,
+.date-picker-popup > * > .selected > .secondary-text {
+    -fx-fill: -fx-text-background-color;
+}
+
+.date-picker-popup > * > .previous-month.today,
+.date-picker-popup > * > .next-month.today {
+    -fx-background-color: derive(-fx-control-inner-background, -4%), derive(-fx-selection-bar-non-focused, -20%), derive(-fx-control-inner-background, -4%);
+}
+
+.date-picker-popup > * > .previous-month.today:hover,
+.date-picker-popup > * > .next-month.today:hover {
+    -fx-background-color: -fx-selection-bar-non-focused, derive(-fx-selection-bar-non-focused, -20%), -fx-selection-bar-non-focused;
+}
+
+/*............. Tabelas .............*/
+
+.table-view {
+    -fx-background-color: #e8e8e8, -fx-control-inner-background;
+    -fx-background-insets: 0px, 1px;
+    -fx-padding: 1px;
+}
+
+/*............. Cabeçalho .............*/
+
+.table-view *.column-header-background {
+    -fx-background-color: #f4f4f4;
+    -fx-background-insets: 0px, 1px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 1 2 1;
+}
+
+.table-view *.column-header {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #ccc;
+    -fx-border-width: 0 1 0 0;
+    -fx-background-insets: 0 1 0 0;
+    -fx-border-insets: 8 0;
+    -fx-padding: 1em 0em 1em 1em;
+    -fx-pref-height: 32;
+    -fx-cursor: hand;
+}
+
+.table-view *.column-header *.label {
+    -fx-alignment: center-left;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-text-fill: #555;
+    -fx-font-weight: 700;
+}
+
+.table-view *.filler {
+    -fx-background-color: #ddd, #f4f4f4, #f4f4f4;
+    -fx-padding: 0.166667em;
+    -fx-background-insets: 0px, 0px 0px 0px 0px, 0px 1px 0px 1px;
+}
+
+.table-view > *.column-header-background > *.show-hide-columns-button {
+    -fx-background-color: transparent, #f4f4f4, #f4f4f4;
+    -fx-padding: 0.166667em;
+    -fx-background-insets: 0px, 0px 0px 0px 1px, 1px 33px 0px 0px;
+}
+
+.table-view *.show-hide-column-image {
+    -fx-background-color: #555;
+    -fx-padding: 0.25em;
+}
+
+.table-view *.column-drag-header {
+    -fx-background-color: #96c440;
+    -fx-border-color: #96c440;
+    -fx-opacity: 0.6px;
+}
+
+/*............. Corpo .............*/
+
+.table-cell:even {
+    -fx-background-color: null;
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-cell-size: 2em;
+    -fx-padding: 0.5em 0.6em;
+    -fx-pref-height: 30px;
+    -fx-text-fill: #6a6a6a;
+}
+
+.table-row-cell:even {
+    -fx-background: -fx-control-inner-background;
+    -fx-background-color: #f7f7f7, #fff;
+    -fx-background-insets: 0px, 0px 0px 1px 0px;
+    -fx-padding: 0px;
+}
+
+.table-row-cell:even:selected {
+    -fx-background: -fx-control-inner-background;
+    -fx-background-color: #d7e3a8 transparent, #ebf4c7;
+    -fx-background-insets: 0px, 1px 0px 1px 0px;
+}
+
+.table-cell:odd {
+    -fx-background-color: null;
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-text-fill: #6a6a6a;
+    -fx-cell-size: 2em;
+    -fx-padding: 0.5em 0.6em;
+    -fx-pref-height: 30px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f7f7f7, #fff;
+    -fx-background: -fx-control-inner-background;
+    -fx-background-insets: 0px, 0px 0px 1px 0px;
+    -fx-padding: 0px;
+}
+
+.table-row-cell:odd:selected {
+    -fx-background: -fx-control-inner-background;
+    -fx-background-color: #d7e3a8 transparent, #ebf4c7;
+    -fx-background-insets: 0px, 1px 0px 1px 0px;
+    -fx-text-fill: black;
+}
+
+.table-view > *.virtual-flow > *.corner {
+    -fx-background-color: #fff;
+}
+
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled > .check-box-table-cell:selected > .check-box > .box,
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected > .check-box-table-cell > .check-box > .box {
+    -fx-background-color: derive(-fx-accent, 40%), -fx-background;
+}
+
+.table-view > *.virtual-flow > *.scroll-bar:horizontal {
+    -fx-background-color: #fff;
+    -fx-background-insets: 5 0;
+    -fx-padding: 2;
+    -fx-pref-height: 15;
+}
+
+.table-view > *.virtual-flow > *.scroll-bar:vertical {
+    -fx-background-color: #fff;
+    -fx-background-insets: 0 5;
+    -fx-padding: 2;
+    -fx-pref-width: 15;
+}
+
+.table-view > *.virtual-flow > *.scroll-bar > *.decrement-button > *.decrement-arrow,
+.table-view > *.virtual-flow > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.table-view > *.virtual-flow > *.scroll-bar:vertical > *.thumb,
+.table-view > *.virtual-flow > *.scroll-bar:horizontal > *.thumb {
+    -fx-background-color: #cecece;
+    -fx-cursor: hand;
+    -fx-border-radius: 0;
+    -fx-background-radius: 2;
+    -fx-pref-height: 10;
+}
+
+/*............. Coluna Overlay .............*/
+
+.table-view *.column-overlay {
+    -fx-background-color: darkgray;
+    -fx-opacity: 0.3px;
+}
+
+/*............. Scroll Pane .............*/
+
+.scroll-pane {
+    -fx-background-insets: 0px, 1px;
+    -fx-padding: 1px;
+    -fx-background-color: #fff, #fff;
+}
+
+.scroll-pane > *.viewport {
+    -fx-background-color: #fff;
+}
+
+.scroll-pane > *.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 5;
+    -fx-padding: 2;
+    -fx-pref-width: 15;
+}
+
+.scroll-pane > *.scroll-bar > *.decrement-button,
+.scroll-pane > *.scroll-bar > *.increment-button {
+    -fx-background-color: #fff;
+}
+
+.scroll-pane > *.scroll-bar > *.decrement-button:hover,
+.scroll-pane > *.scroll-bar > *.increment-button:hover {
+    -fx-background-color: #fff;
+    -fx-cursor: hand;
+}
+
+.scroll-pane > *.scroll-bar > *.decrement-button > *.decrement-arrow,
+.scroll-pane > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: #434343;
+}
+
+.scroll-pane > *.scroll-bar:vertical > *.thumb,
+.scroll-pane > *.scroll-bar:horizontal > *.thumb {
+    -fx-background-color: #cecece;
+    -fx-cursor: hand;
+    -fx-border-radius: 0;
+    -fx-background-radius: 2;
+    -fx-pref-height: 10;
+}
+
+/*............. Graficos Geral.............*/
+.chart-title {
+    -fx-font-size: 20px;
+    -fx-text-fill: #707070;
+}
+
+/*.......... Grafico Linha ...........*/
+
+.chart-content .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-content .plot-content {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+    -fx-stroke-dash-array: 0.25em;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #e5e5e5;
+    -fx-stroke-dash-array: 0.25em;
+}
+
+/*.......... Legenda Eixos ...........*/
+
+.axis {
+    -fx-tick-label-fill: #444;
+    -fx-tick-label-font-size: 10px;
+    -fx-tick-label-gap: 5px;
+    -fx-tick-length: 10px;
+    -fx-tick-label-font-family: "Open Sans Semibold", sans-serif;
+}
+
+.axis:left {
+    -fx-border-color: transparent #e4e4e4 transparent transparent;
+}
+
+.axis:left > *.axis-label {
+    -fx-padding: 0px 0px 4px 0px;
+}
+
+.axis:bottom {
+    -fx-border-color: #e4e4e4 transparent transparent transparent;
+}
+
+.axis:bottom > *.axis-label {
+    -fx-padding: 4px 0px 0px 0px;
+}
+
+.axis {
+    AXIS_COLOR: #dfdfdf;
+}
+
+.axis-tick-mark {
+    -fx-fill: null;
+}
+
+/*..........Legenda Graáficos...........*/
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4px;
+    -fx-padding: 5px;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #777;
+}
+
+/*............. Graficos Pizza.............*/
+/*.......... Configurações ...........*/
+
+.chart-pie-label {
+    -fx-padding: 3px;
+    -fx-fill: #777777;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: #ccc;
+    -fx-stroke-width: 1;
+    -fx-fill: #ccc;
+}
+
+.chart-pie {
+    -fx-background-color: derive(-fx-pie-color, 20%), derive(-fx-pie-color, 0%);
+    -fx-background-insets: 0;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+}
+
+.pie-legend-symbol.chart-pie {
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+    -fx-border-color: transparent;
+}
+
+/*..........Cores Grafico Pizza ...........*/
+
+.default-color0.chart-pie {
+    -fx-pie-color: #ffc94c;
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: rgba(106, 184, 106, 0.76);
+}
+
+.default-color2.chart-pie {
+    -fx-pie-color: #4fa9c5;
+}
+
+.default-color3.chart-pie {
+    -fx-pie-color: #2E8CD9;
+}
+
+.default-color4.chart-pie {
+    -fx-pie-color: #58488c;
+}
+
+.default-color5.chart-pie {
+    -fx-pie-color: #A52A73;
+}
+
+.default-color6.chart-pie {
+    -fx-pie-color: #fd3443;
+}
+
+.default-color7.chart-pie {
+    -fx-pie-color: #ff8f00;
+}
+
+.negative.chart-pie {
+    -fx-pie-color: transparent;
+    -fx-background-color: white;
+}
+
+/*.......... Cores Graficos de Barra ...........*/
+.chart-bar {
+    -fx-background-color: derive(-fx-bar-fill, 20%), derive(-fx-bar-fill, 0%);
+    -fx-background-insets: 0px;
+}
+
+.bar-legend-symbol {
+    -fx-padding: 10px;
+    -fx-background-insets: 4px;
+    -fx-border-radius: 0px;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #ffc94c;
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: rgba(97, 181, 97, 0.8);
+}
+
+.default-color2.chart-bar {
+    -fx-bar-fill: #4fa9c5;
+}
+
+.default-color3.chart-bar {
+    -fx-bar-fill: #2E8CD9;
+}
+
+.default-color4.chart-bar {
+    -fx-bar-fill: #58488c;
+}
+
+.default-color5.chart-bar {
+    -fx-bar-fill: #A52A73;
+}
+
+.default-color6.chart-bar {
+    -fx-bar-fill: #fd3443;
+}
+
+.default-color7.chart-bar {
+    -fx-bar-fill: #ff8f00;
+}
+
+/*.......... Cores Graficos de Linha ...........*/
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.chart-line-conteudo {
+    -fx-background-color: #fff;
+    -fx-border-color: #e4e4e4;
+    -fx-border-width: 2;
+    -fx-text-fill: #4e4e4e;
+    -fx-font-size: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-min-width: 25px;
+    -fx-min-height: 25px;
+    -fx-pref-width: 25px;
+    -fx-pref-height: 25px;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-alignment: center;
+}
+
+.chart-line-symbol {
+    -fx-background-insets: 0, 1.5px;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+    -fx-max-height: 10;
+}
+
+.chart-series-line.default-color0 {
+    -fx-stroke: #ffc94c;
+}
+
+.chart-line-symbol.default-color0 {
+    -fx-background-color: #ffc94c, white;
+}
+
+.chart-series-line.default-color1 {
+    -fx-stroke: rgba(97, 181, 97, 0.8);
+}
+
+.chart-line-symbol.default-color1 {
+    -fx-background-color: rgba(97, 181, 97, 0.8), white;
+}
+
+.chart-series-line.default-color2 {
+    -fx-stroke: #4fa9c5;
+}
+
+.chart-line-symbol.default-color2 {
+    -fx-background-color: #4fa9c5, white;
+}
+
+.chart-series-line.default-color3 {
+    -fx-stroke: #2E8CD9;
+}
+
+.chart-line-symbol.default-color3 {
+    -fx-background-color: #2E8CD9, white;
+}
+
+.chart-series-line.default-color4 {
+    -fx-stroke: #58488c;
+}
+
+.chart-line-symbol.default-color4 {
+    -fx-background-color: #58488c, white;
+}
+
+.chart-series-line.default-color5 {
+    -fx-stroke: #A52A73;
+}
+
+.chart-line-symbol.default-color5 {
+    -fx-background-color: #A52A73, white;
+}
+
+.chart-series-line.default-color6 {
+    -fx-stroke: #fd3443;
+}
+
+.chart-line-symbol.default-color6 {
+    -fx-background-color: #fd3443, white;
+}
+
+.chart-series-line.default-color7 {
+    -fx-stroke: #ff8f00;
+}
+
+.chart-line-symbol.default-color7 {
+    -fx-background-color: #ff8f00, white;
+}
