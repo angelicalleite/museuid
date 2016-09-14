@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Catalogacao implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private int numeroPartes;
     private boolean emprestimo;
@@ -22,11 +22,11 @@ public class Catalogacao implements Serializable {
     private String descricao;
     private String dataEntrada;
     private LocalDate dataCadastro;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.LAZY)
+    @OneToOne(optional = true)
     private Colecao colecao;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.LAZY)
+    @OneToOne(optional = true)
     private Designacao designacao;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.LAZY)
+    @OneToOne(optional = true)
     private Estratigrafia estratigrafia;
 
     public Catalogacao() {

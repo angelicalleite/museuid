@@ -2,7 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/AuditoriaDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/CatalogacaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/DesignacaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/EmprestimoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/EmprestimoItemDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/EstratigrafiaDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/ExcursaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/IdentificacaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/InstituicaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/LocalDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/LocalizacaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/LoginDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/MovimentacaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/OrganizacaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/RelatorioDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/SetorDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/TipoUsuarioDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/UsuarioDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/ValidacaoDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/ValidacaoItemDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/VisitanteDAOTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/br/com/museuid/SQLTest.java" afterPath="$PROJECT_DIR$/src/test/java/br/com/museuid/test/sqltest/SQLTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelSessionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelSessionFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/AuditoriaDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/AuditoriaDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/CatalogacaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/CatalogacaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ColecaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ColecaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/DesignacaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/DesignacaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoItemDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoItemDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EstratigrafiaDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EstratigrafiaDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ExcursaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ExcursaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/IdentificacaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/IdentificacaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/InstituicaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/InstituicaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalizacaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalizacaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/MovimentacaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/MovimentacaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/OrganizacaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/OrganizacaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/SetorDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/SetorDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/TipoUsuarioDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/TipoUsuarioDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/UsuarioDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/UsuarioDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoItemDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoItemDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/VisitanteDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/VisitanteDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Auditoria.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Auditoria.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Catalogacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Catalogacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Colecao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Colecao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Designacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Designacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Emprestimo.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Emprestimo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/EmprestimoItem.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/EmprestimoItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Estratigrafia.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Estratigrafia.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Excursao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Excursao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Identificacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Identificacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Instituicao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Instituicao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Local.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Local.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Localizacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Localizacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Movimentacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Movimentacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Organizacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Organizacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Setor.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Setor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/TipoUsuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/TipoUsuario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Usuario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Validacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Validacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/ValidacaoItem.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/ValidacaoItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Visitante.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Visitante.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,18 +146,53 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AuditoriaDAOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/museuid/test/AuditoriaDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="493">
+              <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuditoriaDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/AuditoriaDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TipoUsuarioDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/TipoUsuarioDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#492#493#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -117,57 +218,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/br/com/museuid/css/login.css" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/view/app/App.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/view/login.fxml" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/AppController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/view/app.fxml" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/view/AppController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/view/app/AppController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/view/login/login.fxml" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/view/login/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/DAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/ExcursaoController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Modulo.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/ExcursaoDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/EmprestimoDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/DesignacaoDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/ColecaoDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/css/app.css" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/CatalogarController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/controle/ConexaoBanco.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Animacao.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Campo.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Combo.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Criptografia.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Dialogo.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/GraficoArea.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/GraficoLine.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Nota.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Query.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/ConsultasRelatorios.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Consultas.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Relatorios.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/Tempo.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/model/Catalogacao.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/model/Emprestimo.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/controller/DashController.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/util/GraficoBar.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/app/App.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/CatalogacaoDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/app/Login.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/css/custom.css" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/AuditoriaDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/museuid/banco/dao/EstratigrafiaDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/museuid/AuditoriaDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/museuid/test/LocalDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/museuid/banco/dao/LocalizacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelSessionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelInterface.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/UsuarioDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/InstituicaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/TipoUsuarioDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/IdentificacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/CatalogacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EstratigrafiaDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/OrganizacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/SetorDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ColecaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/DesignacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ExcursaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoItemDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalizacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/MovimentacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoItemDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/VisitanteDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Auditoria.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Catalogacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Colecao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Designacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Emprestimo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/EmprestimoItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Instituicao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Identificacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Excursao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Estratigrafia.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Organizacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Movimentacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Localizacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Local.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Setor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Visitante.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/ValidacaoItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/Validacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/model/TipoUsuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/museuid/test/AuditoriaDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/AuditoriaDAO.java" />
       </list>
     </option>
   </component>
@@ -189,42 +290,17 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="JavaFX Example Maven Project" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="JavaFX Example Maven Project" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="267" />
-    <option name="y" value="152" />
-    <option name="width" value="1382" />
-    <option name="height" value="845" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -815,7 +891,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -836,7 +912,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -869,23 +945,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="museuid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="museuid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -904,7 +966,6 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.29060665" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -913,18 +974,71 @@
     <property name="prop_add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid" />
-      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid\src\main\resources\META-INF" />
       <recent name="C:\Users\Angelica\Documents\Intellij\MuseuID\src\br\com\museuid\view\login" />
       <recent name="C:\Users\Angelica\Documents\Intellij\MuseuID\src\br\com\museuid\view\app" />
       <recent name="C:\Users\Angelica\Documents\Intellij\MuseuID\src\br\com\museuid\app" />
       <recent name="C:\Users\Angelica\Documents\Intellij\MuseuID\src\br\com\museuid\view" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.museuid" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid\src\test\java\resources" />
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid\src\test\java\br\com\museuid" />
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid\src\test" />
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid" />
+      <recent name="C:\Users\c1278778\Desktop\Heverton\kdi\IJWorkspace\museuid\src" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.AuditoriaDAOTest">
+    <configuration default="false" name="TesteScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="br.com.museuid.banco.controle.jpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="br.com.museuid.banco.controle.jpa.TesteScript" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MuseuID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AuditoriaDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="br.com.museuid.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MuseuID" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="br.com.museuid.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.museuid.test.AuditoriaDAOTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -1182,31 +1296,29 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="br.com.museuid.app.App" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MuseuID" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.TesteScript" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AuditoriaDAOTest" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AuditoriaDAOTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TesteScript" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -1304,8 +1416,47 @@
       <option name="project" value="LOCAL" />
       <updated>1473675926518</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajuste nos dados de importação.">
+      <created>1473676005718</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1473676005718</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 45m 27s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 47m 07s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 50m 09s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 51m 01s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 51m 15s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 51m 37s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 52m 04s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest - 2016.09.12 at 17h 52m 15s.xml">
+      <configuration name="AuditoriaDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest_inserir - 2016.09.12 at 17h 47m 41s.xml">
+      <configuration name="AuditoriaDAOTest.inserir" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuditoriaDAOTest_inserir - 2016.09.12 at 17h 49m 16s.xml">
+      <configuration name="AuditoriaDAOTest.inserir" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="172526000" />
@@ -1320,20 +1471,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="267" y="152" width="1382" height="845" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34170854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22995462" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4159664" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34149185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22995462" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41491842" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17590618" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18496802" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1716418" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1346,15 +1497,15 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997669" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.359944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37513512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281075" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1408,7 +1559,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1417,116 +1568,368 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Mensagem.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Modulo.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Nota.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Relatorios.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Resize.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Tempo.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Auditoria.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Catalogacao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Colecao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Designacao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Emprestimo.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/EmprestimoItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Estratigrafia.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Excursao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Guias.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/ColecaoController.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Identificacao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Instituicao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Local.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Localizacao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/model/Movimentacao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/Animacao.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/util/GraficoBar.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/DAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/controle/ConexaoBanco.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/view/app/AppController.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/app/App.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/VisitanteController.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/PesquisarController.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/css/app.css" />
-    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_catalogacao" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/CatalogacaoDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/controller/DashController.java" />
-    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_instituicao" />
-    <entry file="dbDummy://dbtable:/fa5846e8/a86ff6be-bc35-4976-881c-7e98e087cdff/museuid.tb_excursao" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/app/Login.java" />
-    <entry file="file://$PROJECT_DIR$/MuseuID.iml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/log4j.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/EntityTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="318">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/a86ff6be-bc35-4976-881c-7e98e087cdff" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/css/custom.css" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/AuditoriaDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/VisitanteDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/museuid/banco/dao/EstratigrafiaDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/EntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="1092">
+          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/EntityManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Persistence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <caret line="37" column="58" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelSessionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        <state relative-caret-position="131">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
+        <state relative-caret-position="241">
+          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/CatalogacaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EstratigrafiaDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/OrganizacaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/SetorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ColecaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/DesignacaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/IdentificacaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ExcursaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/InstituicaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoItemDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/EmprestimoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/LocalizacaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/MovimentacaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoItemDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/ValidacaoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/VisitanteDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/TesteScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#2189#2204#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Colecao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Catalogacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/EmprestimoItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Emprestimo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Designacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Instituicao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Identificacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Excursao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Estratigrafia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Relatorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Organizacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Movimentacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Localizacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Local.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Setor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Visitante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/ValidacaoItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Validacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/TipoUsuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/controle/jpa/ModelDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/model/Auditoria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/TipoUsuarioDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/museuid/test/AuditoriaDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="493">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/museuid/banco/dao/AuditoriaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="115">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,8 +20,8 @@ public class UsuarioDAO {
     /**
      * Inserir usuário na base de dados
      */
-    public void inserir(Usuario usuario) {
-        new ModelDAO<Usuario>().add(usuario);
+    public Usuario inserir(Usuario usuario) {
+         return new ModelDAO<Usuario>().add(usuario);
         /*
         try {
             String sql = "INSERT INTO tb_usuario ( nome, login, senha, email, status, descricao, data_criacao, fk_tipo_usuario ) VALUES (?, ?, ?, ?, ?, ?, now(),?)";

@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Usuario implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private String nome;
     private String login;
@@ -18,8 +18,11 @@ public class Usuario implements Serializable {
     private boolean status;
     private LocalDate dataCriacao;
     private String descricao;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @ManyToOne(optional = true)
     private TipoUsuario tipoUsuario;
+
+    public Usuario() {
+    }
 
     public Usuario(int id) {
         this.id = id;
@@ -59,8 +62,6 @@ public class Usuario implements Serializable {
         this.status = status;
     }
 
-    public Usuario() {
-    }
 
     public int getId() {
         return id;

@@ -7,11 +7,11 @@ import java.io.Serializable;
 @Table(name="Setor")
 public class Setor implements Serializable {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
     private String nome;
     private String descricao;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Organizacao orgao;
 
     public Setor() {

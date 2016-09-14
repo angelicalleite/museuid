@@ -20,8 +20,8 @@ public class OrganizacaoDAO  {
     /**
      * Inserir organização na base de dados
      */
-    public void inserir(Organizacao organizacao) {
-        new ModelDAO<Organizacao>().add(organizacao);
+    public Organizacao inserir(Organizacao organizacao) {
+        return new ModelDAO<Organizacao>().add(organizacao);
         /*
         try {
             String sql = "INSERT INTO tb_organizacao(nome, sigla, email, fax, telefone, logradouro, bairro, cidade, estado, pais, descricao, data_cadastro) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now())";

@@ -8,11 +8,11 @@ import java.io.Serializable;
 public class Localizacao implements Serializable {
     @Id
 
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Local local;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Catalogacao catalogacao;
 
     public Localizacao(int id, Local local, Catalogacao catalogacao) {

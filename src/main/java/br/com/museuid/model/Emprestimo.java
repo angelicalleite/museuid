@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Emprestimo implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private String numeroEmprestimo;
     private String solicitante;
@@ -24,7 +24,7 @@ public class Emprestimo implements Serializable {
     private LocalDate dataEntrega;
     private String descricao;
     private String observacoes;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Instituicao instituicao;
 
     public Emprestimo(Integer id) {

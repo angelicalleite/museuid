@@ -20,8 +20,8 @@ public class VisitanteDAO  {
     /**
      * Inserir visitante na base de dados
      */
-    public void inserir(Visitante visitante) {
-        new ModelDAO<Visitante>().add(visitante);
+    public Visitante inserir(Visitante visitante) {
+        return new ModelDAO<Visitante>().add(visitante);
         /*
         try {
             String sql = "INSERT INTO tb_visitantes (nome, funcao, cidade, estado, pais, data_visita, descricao, tipo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";

@@ -8,12 +8,12 @@ import java.io.Serializable;
 public class EmprestimoItem  implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private String conservacao;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Emprestimo emprestimo;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Catalogacao catalogacao;
 
     public EmprestimoItem() {

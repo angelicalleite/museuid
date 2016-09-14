@@ -1,13 +1,9 @@
 package br.com.museuid.banco.dao;
 
 import br.com.museuid.banco.controle.jpa.ModelDAO;
-import br.com.museuid.banco.controle.jpa.ModelSessionFactory;
 import br.com.museuid.model.Colecao;
 import br.com.museuid.model.Designacao;
-import br.com.museuid.util.Mensagem;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,8 +14,8 @@ public class DesignacaoDAO {
     /**
      * Inserir desigcação na base de dados
      */
-    public void inserir(Designacao designacao) {
-        new ModelDAO<Designacao>().add(designacao);
+    public Designacao inserir(Designacao designacao) {
+        return new ModelDAO<Designacao>().add(designacao);
         /*
         try {
             String sql = "INSERT INTO  tb_designacao (genero, especie, familia, classe, ordem, descricao) VALUES (?, ?, ?, ?, ?, ?)";

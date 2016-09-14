@@ -12,7 +12,7 @@ public class EmprestimoItemDAO {
     /**
      * Inserir validaÃ§Ã£o na base de dados e retornar seu identificador para cadastro de seus itens
      */
-    public void inserir(EmprestimoItem emprestimoItem) {
-        new ModelDAO<EmprestimoItem>().add(emprestimoItem);
+    public EmprestimoItem inserir(EmprestimoItem emprestimoItem) {
+        return new ModelDAO<EmprestimoItem>().add(emprestimoItem);
     }
 }

@@ -1,14 +1,8 @@
 package br.com.museuid.banco.dao;
 
 import br.com.museuid.banco.controle.jpa.ModelDAO;
-import br.com.museuid.banco.controle.jpa.ModelSessionFactory;
-import br.com.museuid.model.Colecao;
 import br.com.museuid.model.Local;
-import br.com.museuid.model.Setor;
-import br.com.museuid.util.Mensagem;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,8 +13,8 @@ public class LocalDAO  {
     /**
      * Inserir local na base de dados
      */
-    public void inserir(Local local) {
-        new ModelDAO<Local>().add(local);
+    public Local inserir(Local local) {
+        return new ModelDAO<Local>().add(local);
         /*
         try {
             String sql = "INSERT INTO tb_local (nome, descricao, fk_setor) VALUES (?, ?, ?) ";

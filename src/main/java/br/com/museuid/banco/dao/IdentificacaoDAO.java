@@ -16,8 +16,8 @@ public class IdentificacaoDAO {
     /**
      * Inserir catalogação na base de dados
      */
-    public void inserir(Identificacao identificacao) {
-        new ModelDAO<Identificacao>().add(identificacao);
+    public Identificacao inserir(Identificacao identificacao) {
+        return new ModelDAO<Identificacao>().add(identificacao);
     }
 
     /**

@@ -11,7 +11,7 @@ import java.util.List;
 public class Validacao  implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
     private String categoria;
     private String subcategoria;
@@ -20,9 +20,9 @@ public class Validacao  implements Serializable {
     private int invalidados;
     private boolean status;
     private LocalDate data;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Usuario responsavel;
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany
     private List<ValidacaoItem> itens;
 
     public Validacao() {

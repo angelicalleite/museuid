@@ -1,7 +1,6 @@
 package br.com.museuid.banco.dao;
 
 import br.com.museuid.banco.controle.jpa.ModelDAO;
-import br.com.museuid.banco.controle.jpa.ModelSessionFactory;
 import br.com.museuid.model.Colecao;
 
 import java.util.List;
@@ -14,8 +13,8 @@ public class ColecaoDAO {
     /**
      * Inserir coleção na base de dados
      */
-    public void inserir(Colecao colecao) {
-        new ModelDAO<Colecao>().add(colecao);
+    public Colecao inserir(Colecao colecao) {
+        return new ModelDAO<Colecao>().add(colecao);
         /*
         try {
             String sql = "INSERT INTO tb_colecao (nome, descricao) VALUES (?, ?)";

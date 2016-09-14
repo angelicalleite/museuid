@@ -19,8 +19,8 @@ public class SetorDAO {
     /**
      * Inserir setor na base de dados
      */
-    public void inserir(Setor setor) {
-        new ModelDAO<Setor>().add(setor);
+    public Setor inserir(Setor setor) {
+        return new ModelDAO<Setor>().add(setor);
         /*
         try {
             String sql = "INSERT INTO  tb_setor (nome, descricao, fk_orgao) VALUES (?, ?, ?) ";

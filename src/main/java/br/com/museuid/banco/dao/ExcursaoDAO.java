@@ -23,8 +23,8 @@ public class ExcursaoDAO  {
     /**
      * Inserir excursão na base de dados
      */
-    public void inserir(Excursao excursao) {
-        new ModelDAO<Excursao>().add(excursao);
+    public Excursao inserir(Excursao excursao) {
+        return new ModelDAO<Excursao>().add(excursao);
         /*
         try {
             String sql = "INSERT INTO tb_excursao (curso, participantes, responsavel, contato, guias, horario, data_visita, descricao, agendar, status_agenda, fk_instituticao) "

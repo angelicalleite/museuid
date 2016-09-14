@@ -1,14 +1,8 @@
 package br.com.museuid.banco.dao;
 
 import br.com.museuid.banco.controle.jpa.ModelDAO;
-import br.com.museuid.banco.controle.jpa.ModelSessionFactory;
-import br.com.museuid.model.Colecao;
-import br.com.museuid.model.Emprestimo;
 import br.com.museuid.model.Estratigrafia;
-import br.com.museuid.util.Mensagem;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,8 +13,8 @@ public class EstratigrafiaDAO {
     /**
      * Inserir estratigrafia na base de dados
      */
-    public void inserir(Estratigrafia estratigrafia) {
-        new ModelDAO<Estratigrafia>().add(estratigrafia);
+    public Estratigrafia inserir(Estratigrafia estratigrafia) {
+        return new ModelDAO<Estratigrafia>().add(estratigrafia);
         /*
         try {
             String sql = "INSERT INTO tb_estratigrafia (formacao, grupo, descricao) VALUES (?, ?, ?) ";

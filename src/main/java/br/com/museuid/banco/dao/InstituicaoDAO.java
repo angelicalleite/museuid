@@ -19,8 +19,8 @@ public class InstituicaoDAO  {
     /**
      * Inserir instituição na base de dados
      */
-    public void inserir(Instituicao instituicao) {
-        new ModelDAO<Instituicao>().add(instituicao);
+    public Instituicao inserir(Instituicao instituicao) {
+         return new ModelDAO<Instituicao>().add(instituicao);
         /*
         try {
             String sql = "INSERT INTO tb_instituicao (nome, representante, telefone, cidade, estado, pais, descricao) VALUES (?, ?, ?, ?, ?, ?, ?)";

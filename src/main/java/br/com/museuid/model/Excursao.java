@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class Excursao  implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private String curso;
     private String horario;
@@ -20,7 +20,7 @@ public class Excursao  implements Serializable {
     private boolean agendamento;
     private String statusAgendamento;
     private String descricao;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Instituicao instituicao;
 
     public Excursao() {

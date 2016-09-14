@@ -7,7 +7,7 @@ import java.time.LocalDate;
 @Table(name="Visitante")
 public class Visitante  implements Serializable {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
     private String nome;
     private String funcao;

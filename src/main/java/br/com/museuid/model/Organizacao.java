@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class Organizacao  implements Serializable {
     @Id
 
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
     private String nome;
     private String sigla;

@@ -1,14 +1,9 @@
 package br.com.museuid.banco.dao;
 
 import br.com.museuid.banco.controle.jpa.ModelDAO;
-import br.com.museuid.banco.controle.jpa.ModelSessionFactory;
 import br.com.museuid.model.*;
-import br.com.museuid.util.Mensagem;
-import br.com.museuid.util.Tempo;
 
-import java.sql.SQLException;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,8 +14,8 @@ public class EmprestimoDAO {
     /**
      * Inserir empréstimo
      */
-    public void inserir(Emprestimo emprestimo) {
-        new ModelDAO<Emprestimo>().add(emprestimo);
+    public Emprestimo inserir(Emprestimo emprestimo) {
+        return new ModelDAO<Emprestimo>().add(emprestimo);
         /*
         try {
             String sql = "INSERT INTO tb_emprestimo (numero_emprestimo, solicitante, cpf, rg, telefone, email, responsavel, status_emprestimo, data_emprestimo, data_devolucao, descricao, fk_instituicao) " +

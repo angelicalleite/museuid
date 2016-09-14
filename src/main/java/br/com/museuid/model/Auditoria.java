@@ -9,12 +9,12 @@ import java.time.LocalDate;
 public class Auditoria implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private String acao;
     private String descricao;
     private LocalDate data;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
+    @OneToOne(optional = true)
     private Usuario user;
 
     public Auditoria() {

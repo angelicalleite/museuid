@@ -21,8 +21,8 @@ public class ValidacaoDAO {
     /**
      * Inserir validação na base de dados e retornar seu identificador para cadastro de seus itens
      */
-    public void inserir(Validacao validacao) {
-        new ModelDAO<Validacao>().add(validacao);
+    public Validacao inserir(Validacao validacao) {
+        return new ModelDAO<Validacao>().add(validacao);
     }
 
     /**

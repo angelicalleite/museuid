@@ -17,8 +17,8 @@ public class LocalizacaoDAO {
     /**
      * Inserir catalogação na base de dados
      */
-    public void inserir(Localizacao localizacao) {
-        new ModelDAO<Localizacao>().add(localizacao);
+    public Localizacao inserir(Localizacao localizacao) {
+        return new ModelDAO<Localizacao>().add(localizacao);
     }
 
     /**

@@ -1,27 +1,28 @@
 package br.com.museuid.banco.dao;
 
 import br.com.museuid.banco.controle.jpa.ModelDAO;
-import br.com.museuid.banco.controle.jpa.ModelSessionFactory;
 import br.com.museuid.model.Auditoria;
-import br.com.museuid.model.TipoUsuario;
 import br.com.museuid.model.Usuario;
-import br.com.museuid.util.Mensagem;
-import br.com.museuid.util.Tempo;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * DAO respons�vel pela a��es realizadas na base de dados referentes aos logs da aplica��o
  */
-public class AuditoriaDAO {
+public class AuditoriaDAO<T extends Serializable> extends ModelDAO<T> {
 
     /**
      * Inserir nova ação(log) realizada pelo usu�rio
      */
-    public void inserir(Auditoria log) {
-        new ModelDAO<Auditoria>().add(log);
+    public boolean inserir(Auditoria log) {
+        log = new ModelDAO<Auditoria>().add(log);
+
+        if(log.getId() == null){
+            return false;
+        } else {
+            return true;
+        }
         /*
         try {
             String sql = "INSERT INTO tb_auditoria (acao, data, descricao, fk_usuario) VALUES (?, ?, ?, ?);";
@@ -41,11 +42,14 @@ public class AuditoriaDAO {
         }*/
     }
 
+    public Auditoria inserirObj(Auditoria log) {
+        return new ModelDAO<Auditoria>().add(log);
+    }
     /**
      * Excluir log de acordo com o identificador informado
      */
-    public void excluir(int id) {
-        new ModelDAO<Auditoria>().delete(new Auditoria(id));
+    public boolean excluir(int id) {
+        return new ModelDAO<Auditoria>().delete(new Auditoria(id));
         /*
         try {
             String sql = "DELETE FROM tb_auditoria WHERE id_auditoria = ?";

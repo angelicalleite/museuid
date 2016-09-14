@@ -7,23 +7,19 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public final class ModelSessionFactory {
+public abstract class ModelSessionFactory {
 
     private final Logger log = LoggerFactory.getLogger(ModelSessionFactory.class);
-    private static EntityManagerFactory factory;
-    public static ModelSessionFactory INSTANCE = new ModelSessionFactory();
+    private final String PERSISTENCE_UNIT_NAME = "museuidPU";
+    private EntityManagerFactory factory;
 
-    private ModelSessionFactory(){
+    public ModelSessionFactory(){
         try{
-            factory = Persistence.createEntityManagerFactory("museuidPU");
+            factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         }catch (Exception ex) {
             log.error(ex.getMessage(), ex);
             throw new ExceptionInInitializerError(ex);
         }
-    }
-
-    public static ModelSessionFactory getInstance(){
-        return INSTANCE;
     }
 
     public EntityManager getEntityManager(){

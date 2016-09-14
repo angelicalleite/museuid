@@ -8,12 +8,12 @@ import java.io.Serializable;
 public class ValidacaoItem implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private boolean status;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.LAZY)
+    @OneToOne(optional = true)
     private Catalogacao catalogacao;
-    @OneToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.LAZY)
+    @OneToOne(optional = true)
     private Validacao validacao;
 
     public ValidacaoItem(){

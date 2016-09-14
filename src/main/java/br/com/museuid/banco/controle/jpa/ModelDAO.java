@@ -9,47 +9,37 @@ import javax.persistence.Query;
 import java.io.Serializable;
 import java.util.List;
 
-public class ModelDAO<T extends Serializable> implements ModelInterface<T> {
+public class ModelDAO<T extends Serializable> extends ModelSessionFactory  implements ModelInterface<T> {
 
     private static final Logger log = LoggerFactory.getLogger(ModelDAO.class);
-    private static ModelSessionFactory factory;
-
-    public ModelDAO(){
-        factory = ModelSessionFactory.getInstance();
-    }
-
-    public ModelDAO(ModelSessionFactory factory){
-        factory = ModelSessionFactory.getInstance();
-    }
 
     public EntityManager getSession(){
-        factory = ModelSessionFactory.getInstance();
-        return factory.getEntityManager();
+        return getEntityManager();
     }
 
     @Override
     public T add(T model) {
-        EntityManager session = factory.getEntityManager();
+        EntityManager session = getEntityManager();
         EntityTransaction tx = null;
-        T id = null;
+        T obj = null;
         try{
             tx = session.getTransaction();
             tx.begin();
-            id = session.merge(model);
+            obj = session.merge(model);
             tx.commit();
         }catch (Exception e) {
             if (tx!=null) tx.rollback();
-            e.printStackTrace();
+            log.warn(e.getMessage(), e);
         }finally {
             session.close();
         }
 
-        return id;
+        return obj;
     }
 
     @Override
     public void update(T model) {
-        EntityManager session = factory.getEntityManager();
+        EntityManager session = getEntityManager();
         EntityTransaction tx = null;
         Integer id = null;
         try{
@@ -59,15 +49,36 @@ public class ModelDAO<T extends Serializable> implements ModelInterface<T> {
             tx.commit();
         }catch (Exception e) {
             if (tx!=null) tx.rollback();
-            e.printStackTrace();
+            log.warn(e.getMessage(), e);
         }finally {
             session.close();
         }
     }
 
     @Override
+    public boolean delete(T model) {
+        EntityManager session = getEntityManager();
+        EntityTransaction tx = null;
+        boolean status = false;
+        try{
+            tx = session.getTransaction();
+            tx.begin();
+            session.remove(session.merge(model));
+            tx.commit();
+            status = true;
+        }catch (Exception e) {
+            if (tx!=null) tx.rollback();
+            log.warn(e.getMessage(), e);
+        }finally {
+            session.close();
+        }
+
+        return status;
+    }
+
+    @Override
     public List lists(T model) {
-        EntityManager session = factory.getEntityManager();
+        EntityManager session = getEntityManager();
         EntityTransaction tx = null;
         List lists = null;
         try{
@@ -77,7 +88,7 @@ public class ModelDAO<T extends Serializable> implements ModelInterface<T> {
             tx.commit();
         }catch (Exception e) {
             if (tx!=null) tx.rollback();
-            e.printStackTrace();
+            log.warn(e.getMessage(), e);
         }finally {
             session.close();
         }
@@ -87,12 +98,12 @@ public class ModelDAO<T extends Serializable> implements ModelInterface<T> {
 
     @Override
     public T get(Class clazz, Integer id) {
-        EntityManager session = factory.getEntityManager();
+        EntityManager session = getEntityManager();
         T obj = null;
         try {
             obj = (T) session.find(clazz, id);
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage(), e);
         } finally {
             session.close();
         }
@@ -102,38 +113,17 @@ public class ModelDAO<T extends Serializable> implements ModelInterface<T> {
 
     @Override
     public T findSQL(String sql) {
-        EntityManager session = factory.getEntityManager();
+        EntityManager session = getEntityManager();
         T obj = null;
         try {
             Query query = session.createQuery(sql);
             obj = (T) query.getResultList();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.warn(e.getMessage(), e);
         } finally {
             session.close();
         }
 
         return obj;
-    }
-
-    @Override
-    public boolean delete(T model) {
-        EntityManager session = factory.getEntityManager();
-        EntityTransaction tx = null;
-        boolean status = false;
-        try{
-            tx = session.getTransaction();
-            tx.begin();
-            session.remove(model);
-            tx.commit();
-            status = true;
-        }catch (Exception e) {
-            if (tx!=null) tx.rollback();
-            e.printStackTrace();
-        }finally {
-            session.close();
-        }
-
-        return status;
     }
 }

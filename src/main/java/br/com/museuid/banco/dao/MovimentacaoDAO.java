@@ -19,8 +19,8 @@ public class MovimentacaoDAO {
     /**
      * Inserir movimentação na base de dados
      */
-    public void inserir(Movimentacao movimentacao) {
-        new ModelDAO<Movimentacao>().add(movimentacao);
+    public Movimentacao inserir(Movimentacao movimentacao) {
+        return new ModelDAO<Movimentacao>().add(movimentacao);
         /*
         try {
             String sql = "INSERT INTO tb_movimentacao (objetos, responsavel, local_origem, local_atual, tipo, descricao, data_criacao) VALUES ( ?, ?, ?, ?, ?, ?, ?)";

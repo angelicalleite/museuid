@@ -1,7 +1,6 @@
 package br.com.museuid.banco.dao;
 
 import br.com.museuid.banco.controle.jpa.ModelDAO;
-import br.com.museuid.banco.controle.jpa.ModelSessionFactory;
 import br.com.museuid.model.*;
 import java.util.*;
 
@@ -18,8 +17,8 @@ public class CatalogacaoDAO {//extends DAO {
     /**
      * Inserir catalogação na base de dados
      */
-    public void inserir(Catalogacao catalogacao) {
-        new ModelDAO<Catalogacao>().add(catalogacao);
+    public Catalogacao inserir(Catalogacao catalogacao) {
+        return new ModelDAO<Catalogacao>().add(catalogacao);
         /*
         try {
             String sql = "INSERT INTO tb_catalogacao (numero_ordem, etiqueta_rfid, procedencia, descricao_procedencia, dimensoes, numero_partes, " +

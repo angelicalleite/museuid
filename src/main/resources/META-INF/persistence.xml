@@ -8,6 +8,28 @@
         <!-- provedor/implementacao do JPA -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
+        <!-- mapeamento das class model JPA -->
+        <class>br.com.museuid.model.Auditoria</class>
+        <class>br.com.museuid.model.Catalogacao</class>
+        <class>br.com.museuid.model.Colecao</class>
+        <class>br.com.museuid.model.Designacao</class>
+        <class>br.com.museuid.model.Emprestimo</class>
+        <class>br.com.museuid.model.EmprestimoItem</class>
+        <class>br.com.museuid.model.Estratigrafia</class>
+        <class>br.com.museuid.model.Excursao</class>
+        <class>br.com.museuid.model.Identificacao</class>
+        <class>br.com.museuid.model.Instituicao</class>
+        <class>br.com.museuid.model.Local</class>
+        <class>br.com.museuid.model.Localizacao</class>
+        <class>br.com.museuid.model.Movimentacao</class>
+        <class>br.com.museuid.model.Organizacao</class>
+        <class>br.com.museuid.model.Setor</class>
+        <class>br.com.museuid.model.TipoUsuario</class>
+        <class>br.com.museuid.model.Usuario</class>
+        <class>br.com.museuid.model.Validacao</class>
+        <class>br.com.museuid.model.ValidacaoItem</class>
+        <class>br.com.museuid.model.Visitante</class>
+
         <properties>
             <!-- dados da conexao -->
             <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
@@ -18,7 +40,7 @@
             <!--  propriedades do hibernate -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect" />
             <property name="hibernate.show_sql" value="false" />
-            <property name="hibernate.format_sql" value="true" />
+            <!-- <property name="hibernate.format_sql" value="true" /> -->
             <!--Excluir e re-cria o esquema da base de dados na inicialização
                             validate: validate the schema, makes no changes to the database.
                             update: update the schema.
@@ -28,21 +50,15 @@
             <!-- Drop and re-create the database schema on startup -->
             <!--  atualiza o banco, gera as tabelas se for preciso <property name="hibernate.hbm2ddl.auto" value="update" /> -->
             <property name="javax.persistence.schema-generation.database.action" value="update"/>
-            <!-- Desabilita a Cache secundária -->
-            <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
 
             <!-- Configuring Connection Pool -->
             <property name="hibernate.c3p0.min_size" value="5" />
             <property name="hibernate.c3p0.max_size" value="20" />
-            <property name="hibernate.c3p0.timeout" value="500" />
-            <property name="hibernate.c3p0.max_statements" value="50" />
+            <property name="hibernate.c3p0.timeout" value="5000" />
+            <property name="hibernate.c3p0.max_statements" value="5000" />
             <property name="hibernate.c3p0.idle_test_period" value="2000" />
 
         </properties>
 
     </persistence-unit>
-
-    <persistence-unit name="museuidPU-test" transaction-type="RESOURCE_LOCAL">
-    </persistence-unit>
-
 </persistence>

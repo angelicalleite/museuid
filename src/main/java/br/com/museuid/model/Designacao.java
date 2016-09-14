@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class Designacao  implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private String genero;
     private String especie;

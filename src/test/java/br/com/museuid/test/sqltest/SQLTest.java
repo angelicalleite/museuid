@@ -1,4 +1,4 @@
-package br.com.museuid;
+package br.com.museuid.test.sqltest;
 
 import br.com.museuid.banco.dao.LoginDAO;
 import org.junit.Assert;

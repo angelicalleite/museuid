@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class Movimentacao implements Serializable {
     @Id
 
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
     private String objetos;
     private String responsavel;
